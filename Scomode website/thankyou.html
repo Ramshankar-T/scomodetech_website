@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+
+<!-- Basic Page Needs ================================================== -->
+<meta charset="utf-8">
+<title>Nuratech Labs | Remote Tower Management System</title>
+<meta name="description" content="neko-description">
+<meta name="author" content="Nuratech">
+
+<!-- Mobile Specific Metas ================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS ================================================== -->
+
+<!-- External plugins -->
+<!-- Revolution slider  -->
+<!-- RS5.0 Main Stylesheet -->
+<link rel="stylesheet" type="text/css" href="js-plugins/rs-plugin/css/settings.css">
+
+RS5.0 Layers and Navigation Styles
+<link rel="stylesheet" type="text/css" href="js-plugins/rs-plugin/css/layers.css">
+<link rel="stylesheet" type="text/css" href="js-plugins/rs-plugin/css/navigation.css">
+Neko framework 
+<link type="text/css" rel="stylesheet" href="custom-icons/css/custom-icons.css">
+<link type="text/css" rel="stylesheet" href="neko-framework/external-plugins/external-plugins.min.css">
+<link type="text/css" rel="stylesheet" href="neko-framework/css/layout/neko-framework-layout.css">
+<link type="text/css" rel="stylesheet" id="color" href="neko-framework/css/color/neko-framework-color.css">
+<link type="text/css" rel="stylesheet" href="css/custom.css">
+<link type="text/css" rel="stylesheet" href="css/animation.css">
+<link type="text/css" rel="stylesheet" href="css/style.css">
+
+<link type="text/css" rel="stylesheet" href="css/Countrycode/demo.css">
+<link type="text/css" rel="stylesheet" href="css/Countrycode/intlTelInput.css">
+<!-- <!-- Favicons ================================================== --> -->
+<link rel="shortcut icon" href="images/favico.png">
+
+<!-- <link rel="stylesheet" href="http://basehold.it/30"> -->
+<style>
+
+div#rtms-welcometext {
+	text-align: center;
+    padding: 200px 0;
+    line-height: 30px;
+}
+div#rtms-welcometext h2 {
+    font-size: 28px;
+    line-height: 40px;
+    color: #424650;
+    margin-bottom: 25px;
+}
+div#rtms-welcometext p {
+    color: #666;
+    font-size: 16px;
+    line-height: 35px;
+    font-family: 'Roboto-Light';
+    text-align: center;
+    padding-bottom: 30px;
+}
+::-webkit-input-placeholder {
+  color: #383737 !important; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #383737 !important;
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  color: #383737 !important; }
+
+.enq-form {
+    background: url(images/form-bg.png);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background-size: cover;
+    padding: 40px 50px;
+    display: none;
+    z-index: 9;
+    height: 650px;
+    margin: auto;
+}
+.form-active .enq-form {
+    display: block;
+}
+.form-div {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    bottom: 0;
+    height: 154px;
+    margin: auto;
+}
+
+.form-div img {
+    float: right;
+    cursor: pointer;
+}
+.input-group label {
+    display: block;
+    text-align: left;
+}
+.input-group input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed #fff;
+    margin-bottom: 5px;
+    color: #fff;
+    padding: 0px;
+    font-size: 16px;
+    width: 280px;
+}
+.input-group label {
+    color: #fff;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+input.en-input-button {
+    width: inherit;
+    border: 1px solid;
+    padding: 0 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.enq-form h3 {
+    text-align: left;
+    color: #fff;
+}
+@media (max-width: 1024px) {
+    .form-div {
+        left: 0;
+        top: 420px;
+    }
+}
+</style>
+<style>
+
+.image { 
+   position: relative; 
+   width: 100%; 
+   height: 100%;
+}
+
+h1 { 
+ margin: 0;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+  
+   
+}
+h1 {
+    color: #FFFFFF;
+}
+</style>
+<script src="neko-framework/external-plugins/modernizr/modernizr.custom.js"></script>
+
+</head>
+<body class="activate-appear-animation header-transparent header-dark nav-style-1">
+
+<!-- global-wrapper -->
+<div id="global-wrapper"> 
+  <!-- header -->
+  
+  <header class="nura-header menu-header navbar-fixed-top" > 
+    
+    <div class="container-fluid">
+      <nav class="navbar navbar-default" >
+        <div class="navbar-header">   
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <a class="navbar-brand" href="index.html"> <img src="images/logo.png" alt="Nuratech" class="main-logo-light"/> </a> 
+        </div>
+        <div class="collapse navbar-collapse"> 
+          <ul class="nav navbar-nav navbar-right">
+            <li > <a href="about-us.html">About us</a> </li>
+            <li> <a href="industries.html" class="has-sub-menu">Industries</a>
+             <ul class="sub-menu industlink">
+									<li> <a href="industries.html#ind-telecomes">Telecom</a> </li>
+						<li> <a href="industries.html#ind-powers" >Power</a> </li>
+						<li> <a href="industries.html#ind-minings">Mining</a> </li>
+                         <li> <a href="industries.html#ind-smartcitis">Smart Cities</a> </li>
+             			<li> <a href="industries.html#ind-retails">Retail</a> </li>
+             			<li> <a href="industries.html#ind-oilgass">Oil & Gas</a> </li>									
+								</ul>
+            </li>
+            <li> <a href="technology.html" class="has-sub-menu">technology</a> 
+               <ul class="sub-menu tech-link">
+									<li> <a href="technology.html#scomodes">SCOMODE</a> </li>
+						<li> <a href="technology.html#dna-frameworkss">DNA Framework</a> </li>
+						<li> <a href="technology.html#nividss">NIVIDS</a> </li>									
+								</ul>         
+            </li>
+            <li class="active"> <a href="javascript:void(0);" class="has-sub-menu">products</a>
+              <ul class="sub-menu products-link">
+						<li> <a href="integrated-transport-management-system.html">ITMS</a> </li>
+						<li class="active"> <a href="remote-tower-management-system.html">RTMS</a> </li>
+                        <li> <a href="transformer-monitoring-solution.html">TMS</a> </li>
+                        <li> <a href="products_enhanced_customer.html" >ECEP</a> </li>
+						<li> <a href="products_building_management.html">BMS</a> </li>
+						<li> <a href="operation-management-system.html">OMS</a> </li>					
+							</ul>
+             </li>
+            <li> <a href="contact.html">Contact us</a> </li>
+     
+          </ul>
+ 
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="content-section"> 
+    <section id="slider" class="industry-banner">
+        
+		<!-- 		<div class="owl-carousel neko-data-owl neko-owl-theme-1" data-neko_items="1" data-neko_singleitem="true" data-neko_navigation="true" data-neko_paginationnumbers="false" data-neko_autoplay="true" data-neko_touchDrag="false" data-neko_mouseDrag="false"> -->
+  
+         <div class="image">
+          
+		  <img src="Smartcities.jpg" alt="Thank You" height="100%" width="100%">
+            <h1 class="bannerTitle"><font size="10">Thank you for submitting the enquiry. Our sales team will get in touch with you!</font></h1>
+          
+        
+        <div>
+    
+     
+	  </section>
+      
+   </main>
+  <!-- / content --> 
+  
+  <!-- footer -->
+  
+  <!-- / footer --> 
+</div>
+<!-- global wrapper --> 
+
+<!-- End Document ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script type="text/javascript" src="neko-framework/js/jquery/jquery-2.1.4.min.js"></script> 
+<script type="text/javascript" src="neko-framework/js/jquery-ui/jquery-ui-1.8.23.custom.min.js"></script> 
+
+<!-- external framework plugins --> 
+<script type="application/javascript" src="neko-framework/external-plugins/external-plugins.min.js"></script> 
+<!-- neko framework script --> 
+<script type="text/javascript" src="neko-framework/js/neko-framework.js"></script> 
+
+
+<script type="text/javascript" src="js-plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script> 
+<script type="text/javascript" src="js-plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script> 
+
+
+<script src="js/custom.js"></script>
+
+
+
+<script src="js/Countrycode/intlTelInput.js"></script>
+
+
+</body>
+
+<script type="text/javascript">
+(function(){
+   setTimeout(function(){
+     window.location="remote-tower-management-system.html";
+   },5000); /* 1000 = 1 second*/
+})();
+</script>
+<script type="text/javascript">  
+	function validate(){  
+		var name = $( '#name' ).val().trim();
+		var email = $( '#email' ).val().trim();
+		var num = $( '#phone' ).val().trim();
+		var company = $( '#company' ).val().trim();
+		var desg = $( '#designation' ).val().trim();
+		//var name=document.myform.name.value;  
+		var x=document.myform.email.value;  
+		var atposition=x.indexOf("@");  
+		var dotposition=x.lastIndexOf(".");	  
+		//var num=document.myform.phone.value;
+		//var company=document.myform.company.value; 
+		//var desg=document.myform.designation.value; 
+		var status=false;
+		
+	if(name==""){  
+		document.getElementById("namelocation").innerHTML= " <img src='img/close_red.png'/> Please Enter Your Name";  
+		status=false;
+	}else{  
+		document.getElementById("namelocation").innerHTML=" <img src='img/add.png'/>";  
+		status=true;
+	}  
+	  
+	if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){   
+		document.getElementById("passwordlocation").innerHTML=" <img src='img/close_red.png'/> Please Enter Valid Email Address ";  
+		status=false; 
+	}else{  
+		document.getElementById("passwordlocation").innerHTML=" <img src='img/add.png'/>";  
+	}  
+	 if(num==""){  
+		document.getElementById("numlocation").innerHTML= " <img src='img/close_red.png'/> Please Enter Your Mobile Number ";  
+		status=false;
+	}else{  
+		document.getElementById("numlocation").innerHTML=" <img src='img/add.png'/>";  
+		
+	}	
+	if(company==""){  
+		document.getElementById("comlocation").innerHTML= " <img src='img/close_red.png'/> Please Enter Your Company Name";  
+		status=false;
+	}else{  
+		document.getElementById("comlocation").innerHTML=" <img src='img/add.png'/>";  
+		
+	}
+	if(desg==""){  
+		document.getElementById("desglocation").innerHTML= " <img src='img/close_red.png'/> Please Enter Your Designation";  
+		status=false;
+	}else{  
+		document.getElementById("desglocation").innerHTML=" <img src='img/add.png'/>";  
+		
+	}	
+		return status; 
+		
+	}  
+	
+	$("#phone").intlTelInput({
+      // allowDropdown: false,
+      // autoHideDialCode: false,
+      // autoPlaceholder: "off",
+      // dropdownContainer: "body",
+      // excludeCountries: ["us"],
+      // formatOnDisplay: false,
+      // geoIpLookup: function(callback) {
+      //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+      //     var countryCode = (resp && resp.country) ? resp.country : "";
+      //     callback(countryCode);
+      //   });
+      // },
+      // hiddenInput: "full_number",
+      // initialCountry: "auto",
+      // nationalMode: false,
+      // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+      // placeholderNumberType: "MOBILE",
+      // preferredCountries: ['cn', 'jp'],
+      // separateDialCode: true,
+      utilsScript: "js/Countrycode/utils.js"
+    });
+	
+</script> 
+
+</html>

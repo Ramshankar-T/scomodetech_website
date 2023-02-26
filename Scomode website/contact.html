@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+
+<!-- Basic Page Needs ================================================== -->
+<meta charset="utf-8">
+<title>Scomode Technologies | Contact Us</title>
+<meta name="description" content="neko-description">
+<meta name="author" content="Scomode">
+
+<!-- Mobile Specific Metas ================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS ================================================== -->
+
+<!-- External plugins -->
+<!-- Revolution slider  -->
+<!-- RS5.0 Main Stylesheet -->
+<link rel="stylesheet" type="text/css" href="js-plugins/rs-plugin/css/settings.css">
+
+<!-- RS5.0 Layers and Navigation Styles -->
+<link rel="stylesheet" type="text/css" href="js-plugins/rs-plugin/css/layers.css">
+<link rel="stylesheet" type="text/css" href="js-plugins/rs-plugin/css/navigation.css">
+<!-- Neko framework  -->
+<link type="text/css" rel="stylesheet" href="custom-icons/css/custom-icons.css">
+<link type="text/css" rel="stylesheet" href="neko-framework/external-plugins/external-plugins.min.css">
+<link type="text/css" rel="stylesheet" href="neko-framework/css/layout/neko-framework-layout.css">
+<link type="text/css" rel="stylesheet" id="color" href="neko-framework/css/color/neko-framework-color.css">
+<link type="text/css" rel="stylesheet" href="css/custom.css">
+<link type="text/css" rel="stylesheet" href="css/style.css">
+<link type="text/css" rel="stylesheet" href="css/responsive.css">
+<!-- Favicons ================================================== -->
+<link rel="shortcut icon" href="images/favico.png">
+<link rel="stylesheet" href="build/css/intlTelInput.css">
+  <link rel="stylesheet" href="build/css/demo.css">
+
+<!-- <link rel="stylesheet" href="http://basehold.it/30"> -->
+
+<script src="neko-framework/external-plugins/modernizr/modernizr.custom.js"></script>
+<style>
+.modal-header {
+    padding: 15px;
+    border-bottom: none !important;
+    min-height: 16.43px;
+	}
+.modal-content{background-color:#dff0d8!important; padding:5px !important; border-radius:4px !important;}
+div#rtms-welcometext {
+	text-align: center;
+    padding: 200px 0;
+    line-height: 30px;
+}
+div#rtms-welcometext h2 {
+    font-size: 28px;
+    line-height: 40px;
+    color: #424650;
+    margin-bottom: 25px;
+}
+div#rtms-welcometext p {
+    color: #666;
+    font-size: 16px;
+    line-height: 35px;
+    font-family: 'Roboto-Light';
+    text-align: center;
+    padding-bottom: 30px;
+}
+::-webkit-input-placeholder {
+  color: #383737 !important; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #383737 !important;
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  color: #383737 !important; }
+
+.enq-form {
+    background: url(images/form-bg.png);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background-size: cover;
+    padding: 40px 50px;
+    display: none;
+    z-index: 9;
+    height: 750px;
+    margin: auto;
+}
+.form-active .enq-form {
+    display: block;
+}
+.form-div {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    bottom: 0;
+    height: 154px;
+    margin: auto;
+}
+
+.form-div img {
+    float: right;
+    cursor: pointer;
+}
+.input-group label {
+    display: block;
+    text-align: left;
+}
+.input-group input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed #fff;
+    margin-bottom: 5px;
+    color: #fff;
+    padding: 0px;
+    font-size: 16px;
+    width: 280px;
+}
+.input-group label {
+    color: #fff;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+input.en-input-button {
+    width: inherit;
+    border: 1px solid;
+    padding: 0 20px;
+    margin-top: 0px;
+    border-radius: 10px;
+}
+.enq-form h3 {
+    text-align: left;
+    color: #fff;
+}
+@media (max-width: 1024px) {
+    .form-div {
+        left: 0;
+        top: 84px;
+    }
+}
+.tooltip-inner {
+  white-space:nowrap;
+  max-width:none;
+}
+textarea.form-control{border-radius:5px; color:#000;}
+.form-group label{float:left !important;color: #fff;margin-bottom: 0;font-weight: 400}
+</style>
+</head>
+<body class="activate-appear-animation header-transparent header-dark nav-style-1">
+
+<!-- global-wrapper -->
+<div id="global-wrapper"> 
+  <!-- header -->
+  <div class="form-div " data-placement="top" data-toggle="tooltip" title="Enquire Now">
+						<img src="images/form-icon.png" alt="Formicon">
+						<div class="enq-form">
+							<img src="images/close-icon.png" alt="Close">
+							<form name="myform" method="POST" id="form_test"  >
+								<h3>Enquire Now </h3>
+								<div class="input-group">
+									<label>Name</label>
+									<input type="text" name="name" id="name" class="en-input name"><span id="namelocation" style="color:red"></span></td>
+								</div>								
+								<div class="input-group">
+									<label>Email</label>
+									<input type="text" name="email" id="email" class="en-input email"><span id="passwordlocation" style="color:red"></span>
+								</div>
+								<div class="input-group">
+									<label>Phone Number</label>
+									<input type="hidden" name="hidid" id="hidid" >
+									<input type="tel" name="phone" id="phone" class="en-input phone"><span id="numlocation" style="color:red"></span>
+								</div>
+								
+								<div class="input-group">
+									<label>Company</label>
+									<input type="text" name="company" id="company" class="en-input company"><span id="comlocation" style="color:red"></span></td>
+								</div>
+								<div class="input-group">
+									<label>Designation</label>
+									<input type="text" name="designation" id="designation" class="en-input designation"><span id="desglocation" style="color:red"></span></td>
+								</div>		
+								<div class="form-group">
+									<label>Description</label>
+									<textarea name="description" id="description" class="form-control"></textarea></td>
+								</div>		
+								<div class="input-group">
+									<input type="submit" name="submit" id="form_submit" class="en-input-button" value="Submit">
+								</div>
+									
+							</form>
+						</div>
+
+
+					</div>
+						<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+	<!-- Modal content-->
+	<div class="modal-content">
+		
+	  <div class="modal-body">
+	  <button type="button" class="close" data-dismiss="modal">&times;</button>
+		<strong>Thank you for submitting your Interest. We will contact you soon!</strong>
+	  </div>
+	 
+	</div>
+
+  </div>
+</div>
+  <header class="nura-header menu-header navbar-fixed-top" > 
+    
+    <div class="container-fluid">
+      <nav class="navbar navbar-default" >
+        <div class="navbar-header"> 
+          <!-- hamburger button -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <!-- / hamburger button --> 
+          
+          <!-- Logo --> 
+          <a class="navbar-brand" href="index.html"> <img src="images/logo.png" alt="Scomode" class="main-logo-light"/> </a> 
+          <!-- /Logo --> 
+        </div>
+        <div class="collapse navbar-collapse"> 
+          <!-- Main navigation -->
+         <ul class="nav navbar-nav navbar-right">
+            <li> <a href="about-us.html">About us</a> </li>
+    <!--        <li> <a href="industries.html" class="has-sub-menu">Industries</a>-->
+	   <!--         <ul class="sub-menu industlink">-->
+				<!--	<li> <a href="industries.html#ind-telecomes">Telecom</a> </li>-->
+				<!--	<li> <a href="industries.html#ind-powers" >Power</a> </li>-->
+				
+	                 <!--<li> <a href="#ind-manu" data-toggle="tab"data-image="manufacture-banner">Manufacturing</a> </li> -->
+				<!--	<li> <a href="industries.html#ind-smartcitis">Smart Cities</a> </li>-->
+	   <!--  			<li> <a href="industries.html#ind-retails">Retail</a> </li>-->
+	   <!--  			<li> <a href="industries.html#ind-oilgass">Oil & Gas</a> </li>-->
+    <!--         <li> <a href="industries.html#ind-agriiot">Agri IOT</a> </li>-->
+
+				<!--</ul>-->
+    <!--        </li>-->
+    <li> <a href="industries.html" class="has-sub-menu">Industries</a>
+	            <ul class="sub-menu industlink">
+					<li> <a href="industries.html#ind-telecomes">Telecom</a> </li>
+					<li> <a href="industries.html#ind-powers" >Power</a> </li>
+					<li> <a href="industries.html#ind-minings">Mining</a> </li>
+	                 <!--<li> <a href="#ind-manu" data-toggle="tab"data-image="manufacture-banner">Manufacturing</a> </li> -->
+					<li> <a href="industries.html#ind-smartcitis">Smart Cities</a> </li>
+	     			<li> <a href="industries.html#ind-retails">Retail</a> </li>
+	     			<li> <a href="industries.html#ind-oilgass">Oil & Gas</a> </li>
+             <li> <a href="industries.html#ind-agriiot">Agri IOT</a> </li>
+
+				</ul>
+            </li>
+            <li> <a href="technology.html" class="has-sub-menu">technology</a> 
+                <ul class="sub-menu tech-link">
+									<li> <a href="technology.html#scomodes">SCOMODE</a> </li>
+					
+									
+								</ul>
+            </li>
+            <li> <a href="javascript:void(0);" class="has-sub-menu">products</a> 
+            
+             <ul class="sub-menu products-link">
+						
+						<li> <a href="remote-tower-management-system.html">RTMS</a> </li>
+                        <li> <a href="transformer-monitoring-solution.html">TMS</a> </li>
+                       
+						<li> <a href="products_building_management.html">BMS</a> </li>
+						
+            <li> <a href="products_RobotiX_TactiX.html">RobotiX and TactiX</a> </li>
+								</ul>
+            
+            </li>
+            <li class="active"> <a href="contact.html">Contact us</a> </li>
+            
+            <!--<li class="request-menu"><a href="javascript:;" >Request Demo</a></li> -->
+            
+          </ul>
+          <!-- / End main navigation --> 
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- header --> 
+  
+  <!-- content -->
+  <main id="content" class="content-section"> 
+   	
+    <section class="nura-banner-sec contact-banner" >
+      <div class="container-fluid">
+        <div class="row">
+			<div class="col-md-12 banner-title">
+				<h1>Contact Us</h1>
+			</div>
+			
+				<div class="tab-list ">
+					
+				</div>
+			
+		  </div>
+		</div>
+	  </section>
+      <section class="contact-section"  data-nekoanim="fadeInUp" data-nekodelay="500">
+          <div class="container">
+               
+            <div class="col-md-4 text-center">
+              <div class="contact-details">
+               <div class="singapore-map-icon">
+               </div>
+               <h1  class="contact-title">Singapore</h1>
+               <p class="contact-address">10, Kallang Avenue, #05-17 Aperia Tower 2,<br />
+                Singapore - 339510.
+              </p>
+               
+              <ul class="list-unstyled">
+                <li><strong>Telephone</strong>: +65 6776 7819 </li>
+                <li><strong>Fax</strong>: +65 6776 7817</li>
+                <li><strong>Email</strong>: <a href="mailto:info@scomode.com">info@scomode.com</a>
+                </ul>
+           </div>
+           
+           </div>
+  <div class="col-md-4 text-center">
+          <div class="contact-details">
+           <div class="india-map-icon">
+           </div>
+           <h1  class="contact-title">Chennai</h1>
+           <p class="contact-address">
+            1st Floor,Lakshmi Enclave II,<br/>
+            Sarojini Street, Rajaji Nagar,<br/>
+            Pallavaram, Chennai - 600 043.
+         </p>
+          <ul class="list-unstyled">
+                  <li><strong>Telephone</strong>: +91 86104 43057 </li>
+                
+                  <li><strong>Email</strong>: <a href="mailto:info@scomode.com">info@scomode.com</a>
+                  </ul>
+           
+           
+       </div>
+       
+       </div>
+
+           <div class="col-md-4 text-center">
+            <div class="contact-details">
+               <div class="india-map-icon">
+                </div>
+                <h1  class="contact-title">Coimbatore</h1>
+                
+                <p class="contact-address">
+                #46, <br/>
+                 ATT Colony, Coimbatore -641 018,<br/>
+                </p>
+                <ul class="list-unstyled">
+                  <li><strong>Telephone</strong>: +91 86104 43057 </li>
+                
+                  <li><strong>Email</strong>: <a href="mailto:info@scomode.com">info@scomode.com</a>
+                  </ul>
+                 
+             
+            
+         </div>
+         
+         </div>
+
+       
+             </div>
+             
+      </section>
+     <!-- <section class="getintouch-section"  data-nekoanim="fadeInUp" data-nekodelay="1000">
+         <div class="container text-center">
+             <h1>Get in Touch</h1>
+             <form class="Scomode-feedback-form">
+                <div class="form-group col-md-6 no-padding input-child">
+                   <input type="text" class="form-control" placeholder="Name *" />
+                </div>
+                <div class="form-group col-md-6 no-padding input-right-child">
+                   <input type="text" class="form-control" placeholder="Email *" />
+                </div>
+                <div class="form-group">
+                   <input type="text" class="form-control" placeholder="Subject *"/>
+                </div>
+                 <div class="form-group">
+                   <textarea cols="" rows="7" class="form-control" placeholder="Your message *"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-default submit-form-btn">Submit</button>
+                </div>
+             </form>
+         </div>
+      </section>
+   <section class="map-section"> 
+   		<div id="map-wrapper" class="large light"></div>
+    </section> 
+    </main> -->
+  
+ <!-- footer -->
+ <!--<footer id="main-footer" class="dark-color"> -->
+ <!-- <div class="container"> -->
+ <!--   <div class="row"> -->
+ <!--     <div class="col-md-6"> -->
+ <!--       <div class="row"> -->
+ <!--         <div class="col-md-4 col-sm-4"> -->
+ <!--           <div class="footer-widget"> <h3>Technology</h3> -->
+ <!--             <ul class="list-unstyled footerMenu"> -->
+ <!--               <li class="no-pt"><a data-toggle="tab" data-image="scomode-banner" href="#scomodes">SCOMODE</a></li> -->
+               
+ <!--             </ul> -->
+ <!--           </div> -->
+ <!--         </div> -->
+ <!--         <div class="col-md-4 col-sm-4"> -->
+ <!--           <div class="footer-widget"> <h3>Industries</h3> -->
+ <!--             <div class="no-padding"> -->
+ <!--               <ul class="list-unstyled pull-left"> -->
+ <!--                 <li class="no-pt"><a href="industries.html#ind-telecomes">Telecom</a></li> -->
+ <!--                 <li class="no-pt"><a href="industries.html#ind-powers">Power</a></li> -->
+                
+ <!--                 <li class="no-pt"><a href="industries.html#ind-smartcitis">Smart Cities</a></li> -->
+ <!--                 <li><a href="industries.html#ind-retails">Retail</a></li> -->
+ <!--                 <li><a href="industries.html#ind-oilgass">Oil &amp; Gas</a></li> -->
+ <!--                 <li><a href="industries.html#agri-iot">Agri IOT</a></li> -->
+ <!--               </ul> -->
+ <!--             </div> -->
+ <!--           </div> -->
+ <!--         </div> -->
+ <!--         <div class="col-md-4 col-sm-4"> -->
+ <!--           <div class="footer-widget"> <h3>Products</h3> -->
+ <!--             <div class="no-padding"> -->
+ <!--               <ul class="list-unstyled pull-left"> -->
+                 
+ <!--                 <li class="no-pt"><a href="remote-tower-management-system.html">RTMS</a></li> -->
+ <!--                 <li class="no-pt"><a href="transformer-monitoring-solution.html">TMS</a></li> -->
+                 
+ <!--                 <li><a href="products_building_management.html">BMS</a></li> -->
+ <!--                 <li><a href="products_RobotiX_TactiX.html">RobotiX and TactiX</a></li> -->
+                 
+ <!--               </ul> -->
+ <!--             </div> -->
+ <!--           </div> -->
+ <!--         </div> -->
+ <!--       </div> -->
+ <!--     </div> -->
+ <!--     <div class="col-md-6">-->
+ <!--       <div class="row">-->
+ <!--               <div class="col-md-6 col-sm-6">-->
+ <!--               <div class="footer-widget cont">-->
+ <!--                 <h3 id="contact-us">Contact Us</h3>-->
+ <!--                 <h5><strong>Singapore</strong></h5>-->
+ <!--             <p >10, Kallang Avenue, #05-17 Aperia Tower 2,<br />-->
+ <!--               Singapore - 339510.-->
+ <!--             </p>-->
+ <!--             <ul class="list-unstyled">-->
+ <!--             <li><strong>Telephone</strong>: +65 6776 7819 </li>-->
+ <!--             <li><strong>Fax</strong>: +65 6776 7817</li>-->
+ <!--             <li><strong>Email</strong>: <a href="mailto:info@scomode.com">info@scomode.com</a></li>-->
+ <!--             </ul>-->
+                       
+ <!--                 </div>-->
+ <!--                 <div class="footer-widget cont">-->
+                    <!-- <p class="emal">Email</p>-->
+                    <!-- <p><a href="mailto:ncspl@Scomodelabs.com">ncspl@Scomodelabs.com</a></p>-->
+              
+ <!--                 </div>-->
+ <!--               </div>-->
+ <!--         <div class="col-md-6 col-sm-6">-->
+          
+ <!--           <div class="footer-widget cont last">-->
+ <!--             <h5><strong>India</strong></h5>-->
+              
+ <!--             <p >1st Floor, Lakshmi Enclave II, <br />-->
+ <!--               Sarojini Street, Rajaji Nagar,<br />-->
+ <!--               Pallavaram, Chennai. TN - 600 041.-->
+ <!--           </p>         -->
+ <!--           <br>-->
+ <!--             <p > #46, <br />-->
+ <!--                ATT Colony, Coimbatore. TN – 641 018.-->
+ <!--             </p>-->
+ <!--               <ul class="list-unstyled">-->
+ <!--                   <li><strong>Telephone</strong>: +91 86104 43057</li>-->
+ <!--                   <li><strong>Email</strong>: <a href="mailto:info@scomode.com">info@scomode.com</a></li>-->
+ <!--               </ul>-->
+ <!--           </div>-->
+      
+ <!--         </div>-->
+ <!--       </div>-->
+        
+ <!--   </div>-->
+ <!--   </div> -->
+ <!-- </div> -->
+ <!-- <div class="clearfix"></div>        <!---->
+ <!-- <div class="container"> -->
+ <!--   <div class="row resp"> -->
+ <!--     <div class="col-sm-6  "> -->
+ <!--       <div class="footer-widget clearfix"> <h3>Request for a DEMO</h3> <input placeholder="Email" class="form-input" type="text" /> <button class="submit-btn" type="submit">Submit</button> -->
+ <!--       </div> -->
+ <!--     </div> -->
+ <!--     <div class="col-sm-6 col-xs-12 "> -->
+ <!--       <div> -->
+ <!--         <ul class="social-icons main-color circle social-hover"> -->
+ <!--           <li> <a title="facebook" class="facebook" href="javascript:;">&nbsp;</a> </li> -->
+ <!--           <li> <a title="linkedin" class="linkedin" href="javascript:;">&nbsp;</a> </li> -->
+ <!--           <li> <a title="twitter" class="twitter" href="javascript:;">&nbsp;</a> </li> -->
+ <!--         </ul> -->
+ <!--       </div> -->
+ <!--     </div> -->
+ <!--   </div> -->
+ <!-- </div> -->-->
+    
+    
+   
+       
+      
+    
+  
+  
+ <!-- <div class="container-fluid no-padding"> -->
+ <!--   <div class="copy-rights"> -->
+ <!--     <div class="container"> -->
+ <!--       <div class="row"> -->
+ <!--         <div class="col-md-6 col-sm-12"> -->
+ <!--           <p class="company-copyrights-text">©2022,  Scomode Technologies</p> -->
+ <!--         </div> -->
+         
+ <!--         <div class="col-md-6  col-sm-12">&nbsp;-->
+ <!--         </div> -->
+ <!--       </div> -->
+ <!--     </div> -->
+ <!--   </div> -->
+ <!-- </div> </footer>  -->
+ <!-- footer -->
+  <footer id="main-footer" class="dark-color">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+           <div class="row">
+            <div class="col-md-4 col-sm-4">
+                 <div class="footer-widget">
+            <h3>Technology</h3>
+            <ul class="list-unstyled">
+           
+              <li class="no-pt"><a href="technology.html#scomodes">SCOMODE</a></li>
+             
+            </ul>
+          </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                 	<div class="footer-widget">
+            <h3>Industries</h3>
+          <div class="no-padding">
+              <ul class="list-unstyled pull-left">
+              <li class="no-pt"><a href="industries.html#ind-telecomes">Telecom</a></li>
+              <li class="no-pt"><a href="industries.html#ind-powers" >Power</a></li>
+                <li class="no-pt"><a href="industries.html#ind-minings">Mining</a></li>
+               <li class="no-pt"><a href="industries.html#ind-smartcitis">Smart Cities</a></li>
+                <li><a href="industries.html#ind-retails">Retail</a></li>
+                <li><a href="industries.html#ind-oilgass">Oil & Gas</a></li>
+                <li><a href="industries.html">Agri IOT</a></li>
+                
+              </ul>
+             
+            </div>
+          
+          </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                	<div class="footer-widget">
+            <h3>Products</h3>
+          <div class="no-padding">
+              <ul class="list-unstyled pull-left">
+          
+              <li class="no-pt"><a href="remote-tower-management-system.html" >RTMS</a></li>
+                <li class="no-pt"><a href="transformer-monitoring-solution.html">TMS</a></li>
+  
+                <li><a href="products_building_management.html">BMS</a></li>
+     
+             
+              </ul>
+              
+            </div>
+          
+          </div>
+            </div>
+           </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                  <div class="footer-widget cont">
+                    <h3 id="contact-us">Contact Us</h3>
+                    <h5><strong>Singapore</strong></h5>
+                <p >10, Kallang Avenue, #05-17 Aperia Tower 2,<br />
+                  Singapore - 339510.
+                </p>
+			        	<ul class="list-unstyled">
+                <li><strong>T</strong>: +65 6776 7819 </li>
+                <li><strong>F</strong>: +65 6776 7817</li>
+                <li><strong>E</strong>: <a href="mailto:info@scomode.com">info@scomode.com</a></li>
+                </ul>
+                         
+                    </div>
+                    <div class="footer-widget cont">
+                      <!-- <p class="emal">Email</p>-->
+                      <!-- <p><a href="mailto:ncspl@Scomodelabs.com">ncspl@Scomodelabs.com</a></p>-->
+                
+                    </div>
+                  </div>
+            <div class="col-md-6 col-sm-6">
+            
+              <div class="footer-widget cont last">
+                <h5><strong>India</strong></h5>
+                
+                <p >1st Floor, Lakshmi Enclave II, <br />
+                  Sarojini Street, Rajaji Nagar,<br />
+                  Pallavaram, Chennai. TN - 600 041.
+              </p>         
+              <br>
+                <p >#46, <br />
+                   ATT Colony, Coimbatore. TN – 641 018.
+                </p>
+                  <ul class="list-unstyled">
+                      <li><strong>T</strong>: +91 86104 43057</li>
+                      <li><strong>E</strong>: <a href="mailto:info@scomode.com">info@scomode.com</a></li>
+                  </ul>
+              </div>
+        
+            </div>
+          </div>
+          
+      </div>
+          </div>
+            
+        </div>
+        </div>
+      
+        </div>
+        <div class="clearfix"></div>
+        <!--<div class="container">
+        <div class="row resp">
+         <div class="col-sm-6  ">
+           
+             <div class="footer-widget clearfix">
+            <h3>Request for a DEMO</h3>
+            <input type="text" class="form-input" placeholder="Email">
+            <button type="submit" class="submit-btn">Submit</button>
+          </div>
+          </div>
+          <div class="col-sm-6 col-xs-12 ">
+            <div class="">
+              <ul class="social-icons main-color circle social-hover">
+                <li> <a href="javascript:;" class="facebook" title="facebook"><i class="icon-glyph-320"></i></a> </li>
+                <li> <a href="javascript:;" class="linkedin" title="linkedin"><i class="icon-glyph-308"></i></a> </li>
+                <li> <a href="javascript:;" class="twitter" title="twitter"><i class="icon-glyph-339"></i></a> </li>
+              </ul>
+            </div>
+          </div>
+          </div>
+          </div> -->
+      
+      
+     
+         
+        
+      
+    
+    <div class="container-fluid no-padding">
+      <div class="copy-rights">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <p class="company-copyrights-text">©2022,  Scomode Technologies</p>
+            </div>
+           
+            <div class="col-md-6  col-sm-12"> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<!-- / footer --> 
+</div>
+
+<!-- global wrapper --> 
+
+<!-- End Document ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script type="text/javascript" src="neko-framework/js/jquery/jquery-2.1.4.min.js"></script> 
+<script type="text/javascript" src="neko-framework/js/jquery-ui/jquery-ui-1.8.23.custom.min.js"></script> 
+
+<!-- external framework plugins --> 
+<script type="application/javascript" src="neko-framework/external-plugins/external-plugins.min.js"></script> 
+<!-- neko framework script --> 
+<script type="text/javascript" src="neko-framework/js/neko-framework.js"></script> 
+
+<!-- external custom plugins --> 
+
+
+
+<!-- neko custom script --> 
+<script src="js/custom.js"></script>
+<script type="text/javascript" src="js/common-script.js"></script>
+<script src="build/js/intlTelInput.js"></script>
+<script>
+		 $(document).ready(function () 
+		{	
+			$('.selected-flag').on("change",function()
+			{     
+				var title_code=$('.selected-flag').attr('title');		
+				$('#hidid').val(title_code);
+			});
+		});	
+	</script>		
+<script type="text/javascript">  
+	function validate(){  
+		var name = $( '#name' ).val().trim();
+		var email = $( '#email' ).val().trim();
+		var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+		var num = $( '#phone' ).val().trim();
+		var company = $( '#company' ).val().trim();
+		var desg = $( '#designation' ).val().trim();
+		//var name=document.myform.name.value;  
+		var x=document.myform.email.value;  
+		var atposition=x.indexOf("@");  
+		var dotposition=x.lastIndexOf(".");	  
+		//var num=document.myform.phone.value;
+		//var company=document.myform.company.value; 
+		//var desg=document.myform.designation.value; 
+		var status=false;
+		
+	if(!name.match(/^[a-zA-Z\.]+$/)){  
+		document.getElementById("namelocation").innerHTML= " <img src='img/close_red.png'/> Please Enter Your Name";  
+		status=false;
+	}else{  
+		document.getElementById("namelocation").innerHTML=" <img src='img/add.png'/>";  
+		status=true;
+	}  
+	if (reg.test(email) == false) 
+            {
+                document.getElementById("passwordlocation").innerHTML=" <img src='img/close_red.png'/> Please Enter Valid Email Address ";
+                status=false;
+            }
+			else{ 
+			document.getElementById("passwordlocation").innerHTML=" <img src='img/add.png'/>";  
+	 }   
+	<!-- if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){    -->
+		<!-- document.getElementById("passwordlocation").innerHTML=" <img src='img/close_red.png'/> Please Enter Valid Email Address ";   -->
+		<!-- status=false;  -->
+	<!-- }else{   -->
+		<!-- document.getElementById("passwordlocation").innerHTML=" <img src='img/add.png'/>";   -->
+	<!-- }   -->
+	 if(num==""){  
+		document.getElementById("numlocation").innerHTML= " <img src='img/close_red.png'/> Please Enter Your Mobile Number ";  
+		status=false;
+	}else{  
+		document.getElementById("numlocation").innerHTML=" <img src='img/add.png'/>";  
+		
+	}	
+	if(company==""){  
+		document.getElementById("comlocation").innerHTML= " <img src='img/close_red.png'/> Please Enter Your Company Name";  
+		status=false;
+	}else{  
+		document.getElementById("comlocation").innerHTML=" <img src='img/add.png'/>";  
+		
+	}
+	if(desg==""){  
+		document.getElementById("desglocation").innerHTML= " <img src='img/close_red.png'/> Please Enter Your Designation";  
+		status=false;
+	}else{  
+		document.getElementById("desglocation").innerHTML=" <img src='img/add.png'/>";  		
+	}	
+		<!-- var title_code=$('.selected-flag').attr('title'); -->
+		<!-- var CodeSplit=title_code.split(':');			 -->
+		<!-- var CountryCode=CodeSplit[1].trim()+num; -->
+		<!-- $('#hidid').val(countrycode); -->
+						
+		return status; 				
+	}  
+	$('#form_test').on('submit', function(e) {
+	 e.preventDefault();
+	var  rtnValue=validate();
+	if(rtnValue==true)
+	{
+//	action="contact-form-handler.php" id="form_test" onsubmit="return validate()"
+    //Prevents default submit
+    var form = $(this); 
+    var post_url = form.attr('action'); 
+    var post_data = form.serialize(); //Serialized the form data for process.php
+    //$('#loader', form).html('<img src="../img/loader.gif" /> Please Wait...');
+    $.ajax({
+        type: 'POST',
+        url: 'contact-form-handler.php', // Your form script
+        data: post_data,
+        success: function(msg) {
+		if(msg=="0")
+		{
+		$('#myModal').modal('show'); 
+		 $( '#name' ).val("");
+		}
+		else
+		{
+		$('#form_test img').css("display","none");
+		$( '#name' ).val("");
+		$( '#email' ).val("");
+		$( '#phone' ).val("");
+		$( '#company' ).val("");
+		$( '#designation' ).val("");
+		$( '#description' ).val("");		
+		$('#myModal').modal('show'); 
+		$('.enq-form').fadeToggle();
+		 $('.form-div img').click(function(){
+            $('.enq-form').show();
+        });
+		$('.enq-form img').click(function(){
+            $('.enq-form').hide();
+        });
+		}
+            //$(form).fadeOut(500, function(){
+              //  form.html(msg).fadeIn();
+            //});
+        }
+    });
+	}
+});
+
+	
+	$("#phone").intlTelInput({
+      // allowDropdown: false,
+      // autoHideDialCode: false,
+      // autoPlaceholder: "off",
+      // dropdownContainer: "body",
+      // excludeCountries: ["us"],
+      // formatOnDisplay: false,
+      geoIpLookup: function(callback) {
+        $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+         var countryCode = (resp && resp.country) ? resp.country : "";
+         callback(countryCode);
+        });
+      },
+      // hiddenInput: "full_number",
+      // initialCountry: "auto",
+      // nationalMode: false,
+      // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+      // placeholderNumberType: "MOBILE",
+      // preferredCountries: ['cn', 'jp'],
+      // separateDialCode: true,
+      utilsScript: "js/Countrycode/utils.js"
+    });
+	
+</script>
+<script>
+    $(function(){
+        $('.form-div img').click(function(){
+            $(this).parent().toggleClass('form-active');
+        });
+        $('.enq-form img').click(function(){
+            $(this).parent().parent().removeClass('form-active');
+        });
+    });
+</script>
+</body>
+</html>

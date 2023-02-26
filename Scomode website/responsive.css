@@ -1,0 +1,45 @@
+@media only screen and (max-width : 767px) {
+.enq-form {
+    background: url(images/form-bg.png);
+    position: absolute;
+    bottom:;
+    top: 0;
+    right: 0;
+    background-size: cover;
+    padding: 20px 50px;
+    display: none;
+    z-index: 9;
+    height: 500px !important;
+    margin: auto;
+	overflow:auto !important;
+}
+.form-div {
+		
+    top: 50px !important;
+}
+.form-div img {max-width:16% !important;opacity:.5;}
+  
+}
+@media only screen and (max-width : 1390px) {
+.enq-form {
+    background: url(images/form-bg.png);
+    position: absolute;
+    bottom:;
+    top: 0;
+    right: 0;
+    background-size: cover;
+    padding: 20px 50px;
+    display: none;
+    z-index: 9;
+    height: 600px !important;
+    margin: auto;
+	overflow-y:auto !important;
+}
+
+.form-div {
+    
+    top: 60px !important;
+}
+
+
+}

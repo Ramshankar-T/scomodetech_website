@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+  -->
+
+    <!--?  CHANGE THE HREF BASED ON WHERE YOU HOST  -->
+  <!-- <base href="https://askavinraja.github.io/FletoTrack/"> -->
+
+  <base href="/tramon/v2/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A resource to help developers evaluate and use Flutter.">
+
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="gallery">
+  <link rel="apple-touch-icon" href="icons/logo.png">
+
+  <meta name='viewport' content='width=device-width, height=device-height, initial-scale:1, user-scalable=no' />
+
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://scomode.com/images/favico.png" sizes="32x32"/>
+
+  <title>Bescom</title>
+  <style>
+  body {
+    background-color: #030303;
+  }
+  </style>
+  <link rel="manifest" href="manifest.json">
+  <script>
+    let searchParams = new URLSearchParams(window.location.search);
+    if (searchParams.has('renderer')) {
+      window.flutterWebRenderer = searchParams.get('renderer');
+      console.log(searchParams.get('renderer') + ' renderer requested in the URL');
+    }
+
+    // The value below is injected by flutter build, do not touch.
+    var serviceWorkerVersion = '2971547239';
+  </script>
+  <script src="flutter.js" defer></script>
+  
+</head>
+<body >
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzKJ9azZXIY6omjVVxoxwwwiO_qKbwawc"></script>
+
+  <script>
+    // This prevents zooming in using CTRL + mouse wheel.
+    // See https://stackoverflow.com/a/67039291/6509751.
+    document.addEventListener('wheel', function(e) {
+      e.ctrlKey && e.preventDefault();
+    }, {
+      passive: false,
+    });
+  </script>
+
+  <div id="loading">
+    <style>
+      body {
+        inset: 0; overflow: hidden;
+        margin: 0; padding: 0;
+        position: fixed;
+        background-color: #020D19;
+      }
+      #loading {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        
+        justify-content: center;
+        width: 100%;
+      }
+      #loading img {
+        animation: 1s ease-in-out 0s infinite alternate breathe;
+        opacity: .66;
+        transition: opacity .4s;
+      }
+      #loading.main_done img {
+        opacity: 1;
+      }
+      #loading.init_done img {
+        animation: .33s ease-in-out 0s 1 forwards zooooom;
+        opacity: .05;
+      }
+      @keyframes breathe { from { transform: scale(1) } to { transform: scale(0.95)}}
+      /* @keyframes zooooom { from { transform: scale(1) } to { transform: scale(10)}} */
+      </style>
+    <!-- <img src="https://cdn.dribbble.com/users/1299339/screenshots/11116681/media/79bf1ac602445860e4a44bcd4bf80704.gif" alt="Loading indicator..." -->
+    <!-- <img src="https://cdn.dribbble.com/users/1168644/screenshots/3569278/monitoring-icon-animation.gif" alt="Loading indicator..." -->
+    <img src="https://assets.materialup.com/uploads/2b6db20a-2378-4c0c-8f82-fd854cd6b543/attachment.gif" alt="Loading indicator..."
+   
+    />
+  </div>
+
+  <script>
+    window.addEventListener('load', function() {
+      var loading = document.querySelector('#loading');
+      console.log( "Initialization Started at ",Date())
+
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        }
+      }).then(function(engineInitializer) {
+        console.log( "[FLUTTER ENGINE STARTED]",Date())
+        loading.classList.add('main_done');
+        return engineInitializer.initializeEngine();
+      }).then(function(appRunner) {
+        loading.classList.add('init_done');
+        console.log( "[RUNNING APP INTERFACE]",Date())
+
+        return appRunner.runApp();
+      }).then(function(app) {
+        // Wait a few milliseconds so users can see the "zoooom" animation
+        // before getting rid of the "loading" div.
+        window.setTimeout(function() {
+          loading.remove();
+        }, 200);
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+
+<!-- Basic Page Needs ================================================== -->
+<meta charset="utf-8">
+<title>Nuratech Labs | Remote Tower Management System</title>
+<meta name="description" content="neko-description">
+<meta name="author" content="Nuratech">
+
+<!-- Mobile Specific Metas ================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS ================================================== -->
+
+<!-- External plugins -->
+<!-- Revolution slider  -->
+<!-- RS5.0 Main Stylesheet -->
+<link rel="stylesheet" type="text/css" href="js-plugins/rs-plugin/css/settings.css">
+
+<!-- RS5.0 Layers and Navigation Styles -->
+<link rel="stylesheet" type="text/css" href="js-plugins/rs-plugin/css/layers.css">
+<link rel="stylesheet" type="text/css" href="js-plugins/rs-plugin/css/navigation.css">
+<!-- Neko framework  -->
+<link type="text/css" rel="stylesheet" href="custom-icons/css/custom-icons.css">
+<link type="text/css" rel="stylesheet" href="neko-framework/external-plugins/external-plugins.min.css">
+<link type="text/css" rel="stylesheet" href="neko-framework/css/layout/neko-framework-layout.css">
+<link type="text/css" rel="stylesheet" id="color" href="neko-framework/css/color/neko-framework-color.css">
+<link type="text/css" rel="stylesheet" href="css/custom.css">
+<link type="text/css" rel="stylesheet" href="css/animation.css">
+<link type="text/css" rel="stylesheet" href="css/style.css">
+<!-- Favicons ================================================== -->
+<link rel="shortcut icon" href="images/favico.png">
+
+<!-- <link rel="stylesheet" href="http://basehold.it/30"> -->
+<style>
+
+div#rtms-welcometext {
+	text-align: center;
+    padding: 200px 0;
+    line-height: 30px;
+}
+div#rtms-welcometext h2 {
+    font-size: 28px;
+    line-height: 40px;
+    color: #424650;
+    margin-bottom: 25px;
+}
+div#rtms-welcometext p {
+    color: #666;
+    font-size: 16px;
+    line-height: 35px;
+    font-family: 'Roboto-Light';
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.enq-form {
+    background: url(images/form-bg.png);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background-size: cover;
+    padding: 40px 50px;
+    display: none;
+    z-index: 9;
+    height: 500px;
+    margin: auto;
+}
+.form-active .enq-form {
+    display: block;
+}
+.form-div {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    bottom: 0;
+    height: 154px;
+    margin: auto;
+}
+
+.form-div img {
+    float: right;
+    cursor: pointer;
+}
+.input-group label {
+    display: block;
+    text-align: left;
+}
+.input-group input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed #fff;
+    margin-bottom: 5px;
+    color: #fff;
+    padding: 0px;
+    font-size: 16px;
+    width: 280px;
+}
+.input-group label {
+    color: #fff;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+input.en-input-button {
+    width: inherit;
+    border: 1px solid;
+    padding: 0 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.enq-form h3 {
+    text-align: left;
+    color: #fff;
+}
+@media (max-width: 1024px) {
+    .form-div {
+        left: 0;
+        top: 420px;
+    }
+}
+</style>
+<script src="neko-framework/external-plugins/modernizr/modernizr.custom.js"></script>
+
+</head>
+<body class="activate-appear-animation header-transparent header-dark nav-style-1">
+
+<!-- global-wrapper -->
+<div id="global-wrapper"> 
+  <!-- header -->
+  
+  <header class="nura-header menu-header navbar-fixed-top" > 
+    
+    <div class="container-fluid">
+      <nav class="navbar navbar-default" >
+        <div class="navbar-header"> 
+          <!-- hamburger button -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <!-- / hamburger button --> 
+          
+          <!-- Logo --> 
+          <a class="navbar-brand" href="index.html"> <img src="images/logo.png" alt="Nuratech" class="main-logo-light"/> </a> 
+          <!-- /Logo --> 
+        </div>
+        <div class="collapse navbar-collapse"> 
+          <!-- Main navigation -->
+          <ul class="nav navbar-nav navbar-right">
+            <li > <a href="about-us.html">About us</a> </li>
+            <li> <a href="industries.html" class="has-sub-menu">Industries</a>
+             <ul class="sub-menu industlink">
+									<li> <a href="industries.html#ind-telecomes">Telecom</a> </li>
+						<li> <a href="industries.html#ind-powers" >Power</a> </li>
+						<li> <a href="industries.html#ind-minings">Mining</a> </li>
+                         <!--<li> <a href="#ind-manu" data-toggle="tab"data-image="manufacture-banner">Manufacturing</a> </li> -->
+						<li> <a href="industries.html#ind-smartcitis">Smart Cities</a> </li>
+             			<li> <a href="industries.html#ind-retails">Retail</a> </li>
+             			<li> <a href="industries.html#ind-oilgass">Oil & Gas</a> </li>
+									
+									
+								</ul>
+
+            </li>
+            <li> <a href="technology.html" class="has-sub-menu">technology</a> 
+               <ul class="sub-menu tech-link">
+									<li> <a href="technology.html#scomodes">SCOMODE</a> </li>
+						<li> <a href="technology.html#dna-frameworkss">DNA Framework</a> </li>
+						<li> <a href="technology.html#nividss">NIVIDS</a> </li>
+									
+								</ul>
+            
+            </li>
+            <li class="active"> <a href="javascript:void(0);" class="has-sub-menu">products</a>
+              <ul class="sub-menu products-link">
+						<li> <a href="integrated-transport-management-system.html">ITMS</a> </li>
+						<li class="active"> <a href="remote-tower-management-system.html">RTMS</a> </li>
+                        <li> <a href="transformer-monitoring-solution.html">TMS</a> </li>
+                        <li> <a href="products_enhanced_customer.html" >ECEP</a> </li>
+						<li> <a href="products_building_management.html">BMS</a> </li>
+						<li> <a href="operation-management-system.html">OMS</a> </li>
+									
+								</ul>
+             </li>
+            <li> <a href="contact.html">Contact us</a> </li>
+            
+            <!--<li class="request-menu"><a href="javascript:;" >Request Demo</a></li> -->
+            
+          </ul>
+          <!-- / End main navigation --> 
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- header --> 
+  
+  <!-- content -->
+  <main id="content" class="content-section"> 
+    <section id="slider" class="industry-banner">
+        <div class="owl-carousel neko-data-owl neko-owl-theme-1" data-neko_items="1" data-neko_singleitem="true" data-neko_navigation="true" data-neko_paginationnumbers="false" data-neko_autoplay="true" data-neko_touchDrag="false" data-neko_mouseDrag="false">
+          <!-- owl carousel item 1 -->
+          <div class="item item-img10">
+          <div class="col-md-12 banner-title">
+            <h1 class="bannerTitle">Remote Tower Management System</h1>
+          </div>
+          </div>
+          <!-- / owl carousel item 1 -->
+          <!-- owl carousel item 2 -->
+          <div class="item item-img11">
+          <div class="col-md-12 banner-title">
+            <h1 class="bannerTitle">Remote Tower Management System</h1>
+          </div>
+          </div>
+          <!-- / owl carousel item 2 -->
+          <!-- owl carousel item 3 -->
+          <div class="item item-img12">
+          <div class="col-md-12 banner-title">
+            <h1 class="bannerTitle">Remote Tower Management System</h1>
+          </div>
+          </div>
+          <!-- / owl carousel item 3 -->
+        </div>
+
+    
+      <div class="container-fluid product-slider-tab">
+        <div class="row">
+			
+				<div class="tab-list ">
+					<ul class="nav nav-tabs ims-tab">
+						<li class="active"> <a href="#features" data-toggle="tab" data-image="ims-banner" >Features</a> </li>
+						<li> <a href="#benefits" data-toggle="tab" data-image="ims-banner">Benefits</a> </li>
+              		</ul>
+				</div>
+			
+		  </div>
+		</div>
+	  </section>
+      <div class="tab-content">
+	  <section class="section-fw tab-pane fad in active"  id="features">
+       
+        <div class="container">
+           
+         <!-- <div class="row">
+               <h1 class="product-header">Features</h1>
+          </div> -->
+            <div class="row">
+                <div class="col-lg-12" id="rtms-welcometext">
+                    <h2>Leverage Site Intelligence to Anticipate, Identify, and Mitigate Issues Faster and Eliminate Downtimes.  </h2>
+                    <p>An IOIT based, device-agnostic solution, Nuratech Lab's Remote Tower Management System (RTMS) helps telecom tower companies cut their opex by 10 to 20%.</p>
+                    <p>Through integrated, continuous event monitoring, remote processing and controlling of event-generated data, RTMS helps combat poor grid power supply, operational leakages, diesel pilferage and equipment vandalism that leads to soaring OPEX costs.</p>
+                
+                
+                    <div class="form-div">
+                        <img src="images/form-icon.png" alt="Formicon">
+                        <div class="enq-form">
+                            <img src="images/close-icon.png" alt="Close">
+                            <form method="POST" id="form_test">
+                                <h3>Enquire Now </h3>
+                                <div class="input-group">
+                                    <label>Your Name</label>
+                                    <input type="text" name="name" id="name" class="en-input name">
+                                </div>
+                                <div class="input-group">
+                                    <label>Email</label>
+                                    <input type="email" name="email" id="email" class="en-input email">
+                                </div>
+                                <div class="input-group">
+                                    <label>Phone Number</label>
+                                    <input type="text" name="phone" id="phone" class="en-input phone">
+                                </div>
+                                <div class="input-group">
+                                    <label>Company</label>
+                                    <input type="text" name="company" id="company" class="en-input company">
+                                </div>
+                                <div class="input-group">
+                                    <label>Designation</label>
+                                    <input type="text" name="designation" id="designation" class="en-input designation">
+                                </div>
+                                <div class="input-group">
+                                    <input type="button" name="submit" id="form_submit" class="en-input-button" value="Submit">
+                                </div>
+                            </form>
+                        </div>
+
+
+                    </div>
+                    
+                </div>
+            </div>
+            
+          <div class="row">
+              <div class="col-md-6">
+                 <div class="product-icon">
+                     <img src="images/product/remote-icon/icon-1.png" alt="" />
+                 </div>
+                 <h3 class="product-inner-header">SLA &amp; Downtime Management</h3>
+                 <p class="product-content">
+                   Manage SLA with minimal downtime via proactive monitoring and instant response during critical down time. Integrate the machine data with field force mobile app for the site engineers and O & M partner in real time. 
+                  
+                  </p>
+              </div>
+              <div class="col-md-6">
+                  <div class="product-icon">
+                     <img src="images/product/remote-icon/icon-2.png" alt="" />
+                 </div>
+                 <h3 class="product-inner-header">Surveillance &amp; Security</h3>
+                 <p class="product-content">
+               Monitor the site 24/7 for movement of human and animals and identify movements without authorization and generate alerts and alarms for intrusion and hazards using RFID/BIO metric and geo fenced camera analytic methods. 
+                  
+                  </p>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-md-6">
+                  <div class="product-icon">
+                     <img src="images/product/remote-icon/icon-3.png" alt="" />
+                 </div>
+                 <h3 class="product-inner-header">Environment Monitoring</h3>
+                 <p class="product-content tms-content-align">
+                Monitor Environmental Variables like Temperature, Fire, Gas etc. and control the equipment like HVAC, Fire Alarm, Water pumps etc. automatically or from central control centre in real time to ensure optimum environmental conditions are maintained at the site for assets. 
+                  </p>
+              </div>
+               <div class="col-md-6">
+                  <div class="product-icon">
+                     <img src="images/product/remote-icon/icon-4.png" alt="" />
+                 </div>
+                 <h3 class="product-inner-header">Asset Management</h3>
+                 <p class="product-content">
+                 Proactively monitor asset health and perform predictive maintenance for both active and passive assets for presence and efficiency. 
+                  </p>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-md-6">
+                  <div class="product-icon">
+                     <img src="images/product/remote-icon/icon-5.png" alt="" />
+                 </div>
+                 <h3 class="product-inner-header">Diesel Genset Monitoring</h3>
+                 <p class="product-content">
+                 Monitor diesel generators for fuel levels, tampering, theft and automatically switch generators on/off depending on the power outage conditions and price of power with integration with energy meters and power sources. 
+                  </p>
+              </div>
+              <div class="col-md-6">
+                  <div class="product-icon">
+                     <img src="images/product/remote-icon/icon-6.png" alt="" />
+                 </div>
+                 <h3 class="product-inner-header">Energy Management</h3>
+                 <p class="product-content">
+                 Automatic Control of Power Sources and optimize energy consumption like battery, diesel genset, solar, wind and grid power depending on linear controlling algorithm which choose power depends on the site specific power outage history and pattern.
+                  </p>
+              </div>
+              <div class="clearfix"></div>
+            
+              
+          </div>
+          
+           
+        </div>
+     
+          
+	  </section>
+      <section class="section-fw tab-pane"  id="benefits">
+      <div class="container">
+     <div class="row">
+               <h1 class="product-header">Benefits</h1>
+          </div>
+          <div class="row">
+              <div class="col-md-6 col-sm-6">
+                 <div class="product-icon">
+                     <img src="images/product/remote-icon/icon-7.png" alt="" />
+                 </div>
+                 </div>
+                  <div class="col-md-6 col-sm-6 hidden-xs">
+                  <div class="product-icon">
+                     <img src="images/product/remote-icon/icon-8.png" alt="" />
+                 </div>
+                 </div>
+                 <div class="row">
+                 <div class="col-md-12">
+                 <p class="remote-content">
+                    Telephone cell tower sites from a centralized location is becoming increasingly difficult with expanding networks, increasing OPEX and significant security threats. Poor maintenance of assets and non-visibility on energy consumption is adding to the complexity to manage it from remote. Profits are getting leaner and SLAs tighter making O & M activity a tiresome task.
+                   </p>
+                   <p class="remote-content">
+                    Benefits of Nuratech RTMS
+                     </p>
+                   </div>
+                   </div>
+                   <div class="row">
+                   
+                   <div class="col-md-6 ">
+                 
+                 <ul class="remote-list rtms-list">
+                     <li><p>Enhanced security at Remote Sites </p></li>
+                     <li><p>Centralized monitoring of fuel level, pilferage and prevention of theft </p></li>
+                     <li><p>Proactive and preventive asset Maintenance and management </p></li>
+                    
+                 </ul>
+                 </div>
+                 <div class="col-md-6">
+                 <ul class="remote-list rtms-list1">
+                     <li><p>Centralized Power Source Management</p></li>
+                     <li><p>Adherence of Tight SLA </p></li>
+                     <li><p>Effective downtime Management </p></li>
+                 </ul>
+              </div>
+              
+               
+              
+            </div>
+              
+              </div>
+     	</div>
+	  </section>
+    
+      </div>
+   
+    
+  </main>
+  <!-- / content --> 
+  
+  <!-- footer -->
+  <footer id="main-footer" class="dark-color">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+           <div class="row">
+            <div class="col-md-4 col-sm-4">
+                 <div class="footer-widget">
+            <h3>Technology</h3>
+            <ul class="list-unstyled">
+           
+              <li class="no-pt"><a href="technology.html#scomodes">SCOMODE</a></li>
+              <li><a href="technology.html#dna-frameworkss">DNA Framework</a></li>
+              <li><a href="technology.html#nividss">NIVIDS</a></li>
+            </ul>
+          </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                 	<div class="footer-widget">
+            <h3>Industries</h3>
+          <div class="no-padding">
+              <ul class="list-unstyled pull-left">
+              <li class="no-pt"><a href="industries.html#ind-telecomes">Telecom</a></li>
+              <li class="no-pt"><a href="industries.html#ind-powers" >Power</a></li>
+                <li class="no-pt"><a href="industries.html#ind-minings">Mining</a></li>
+               <li class="no-pt"><a href="industries.html#ind-smartcitis">Smart Cities</a></li>
+                <li><a href="industries.html#ind-retails">Retail</a></li>
+                <li><a href="industries.html#ind-oilgass">Oil & Gas</a></li>
+              </ul>
+             
+            </div>
+          
+          </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                	<div class="footer-widget">
+            <h3>Products</h3>
+          <div class="no-padding">
+              <ul class="list-unstyled pull-left">
+              <li class="no-pt"><a href="integrated-transport-management-system.html">ITMS</a></li>
+              <li class="no-pt"><a href="remote-tower-management-system.html" >RTMS</a></li>
+                <li class="no-pt"><a href="transformer-monitoring-solution.html">TMS</a></li>
+               <li class="no-pt"><a href="products_enhanced_customer.html">ECEP</a></li>
+                <li><a href="products_building_management.html">BMS</a></li>
+               <li> <a href="operation-management-system.html">OMS</a> </li>
+             
+              </ul>
+              
+            </div>
+          
+          </div>
+            </div>
+           </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+              <div class="col-md-6 col-sm-6">
+                   <div class="footer-widget cont">
+            <h3 id="contact-us">Contact Us</h3>
+              <h5><strong>Singapore</strong></h5>
+              <p >BLK 71 # 03-04/05, Ayer Rajah Cresent,<br />
+Singapore - 139 951.</p>
+				<ul class="list-unstyled">
+                <li><strong>T</strong>: +65 6776 7819 </li>
+                <li><strong>F</strong>: +65 6776 7817</li>
+                <li><strong>E</strong>: <a href="mailto:ncspl@nuratechlabs.com">ncspl@nuratechlabs.com</a></li>
+                </ul>
+          </div>
+          <div class="footer-widget cont">
+             <!-- <p class="emal">Email</p>-->
+             <!-- <p><a href="mailto:ncspl@nuratechlabs.com">ncspl@nuratechlabs.com</a></p>-->
+			
+          </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+              
+                    <div class="footer-widget cont last">
+              <h5><strong>India</strong></h5>
+              <p >3rd Floor, Geeyam Tech Square,<br />
+Plot No.57, Developed Plot Estates,<br />
+Perungudi, OMR, Chennai - 600 096.
+   </p>
+				<ul class="list-unstyled">
+                <li><strong>T</strong>: +91 44 4282 6407</li>
+                <li><strong>E</strong>: <a href="mailto:ncspl@nuratechlabs.com">ncspl@nuratechlabs.com</a></li>
+                </ul>
+          </div>
+          
+              </div>
+          </div>
+            
+        </div>
+        </div>
+      
+        </div>
+        <div class="clearfix"></div>
+        <!--<div class="container">
+        <div class="row resp">
+         <div class="col-sm-6  ">
+           
+             <div class="footer-widget clearfix">
+            <h3>Request for a DEMO</h3>
+            <input type="text" class="form-input" placeholder="Email">
+            <button type="submit" class="submit-btn">Submit</button>
+          </div>
+          </div>
+          <div class="col-sm-6 col-xs-12 ">
+            <div class="">
+              <ul class="social-icons main-color circle social-hover">
+                <li> <a href="javascript:;" class="facebook" title="facebook"><i class="icon-glyph-320"></i></a> </li>
+                <li> <a href="javascript:;" class="linkedin" title="linkedin"><i class="icon-glyph-308"></i></a> </li>
+                <li> <a href="javascript:;" class="twitter" title="twitter"><i class="icon-glyph-339"></i></a> </li>
+              </ul>
+            </div>
+          </div>
+          </div>
+          </div> -->
+      
+      
+     
+         
+        
+      
+    
+    <div class="container-fluid no-padding">
+      <div class="copy-rights">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <p class="company-copyrights-text">©2017,  Nuratech Labs Pte Ltd</p>
+            </div>
+            <div class="col-md-6 col-sm-12 fr">
+             <p class="poweredby-text">It's a <a href="http://www.kutung.com/" target="_blank"> Kutung!</a></p>
+            </div>
+            <div class="col-md-6  col-sm-12"> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- / footer --> 
+</div>
+<!-- global wrapper --> 
+
+<!-- End Document ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script type="text/javascript" src="neko-framework/js/jquery/jquery-2.1.4.min.js"></script> 
+<script type="text/javascript" src="neko-framework/js/jquery-ui/jquery-ui-1.8.23.custom.min.js"></script> 
+
+<!-- external framework plugins --> 
+<script type="application/javascript" src="neko-framework/external-plugins/external-plugins.min.js"></script> 
+<!-- neko framework script --> 
+<script type="text/javascript" src="neko-framework/js/neko-framework.js"></script> 
+
+<!-- external custom plugins --> 
+
+<!-- Revolution slider --> 
+<script type="text/javascript" src="js-plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script> 
+<script type="text/javascript" src="js-plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script> 
+
+
+<script src="js/custom.js"></script>
+<!--<script type="text/javascript" src="js/common-script.js"></script>  --> 
+<!-- <script src="js/video.js"></script> -->
+
+</body>
+
+<script>
+    $(function(){
+        $('.form-div img').click(function(){
+            $(this).parent().toggleClass('form-active');
+        });
+        $('.enq-form img').click(function(){
+            $(this).parent().parent().removeClass('form-active');
+        });
+    });
+
+$( '#form_submit' ).on( 'click', function() {
+    var name = $( '#name' ).val().trim();
+    var email = $( '#email' ).val().trim();
+    var phone = $( '#phone' ).val().trim();
+    var company = $( '#name' ).val().trim();
+    var designation = $( '#designation' ).val().trim();
+    if( name == '' ) {
+        alert( 'Please enter name' );
+        return false;
+    } else if( email == '' ) {
+        alert( 'Please enter email' );
+        return false;
+    } else if( phone == '' ) {
+        alert( 'Please enter phone' );
+        return false;
+    } else if( company == '' ) {
+        alert( 'Please enter company' );
+        return false;
+    } else if( designation == '' ) {
+        alert( 'Please enter designation' );
+        return false;
+    }
+    var data = {
+        name: name,
+        email: email,
+        phone: phone,
+        company: company,
+        designation: designation,
+    };
+    $.ajax({
+        type: 'post',
+        url: 'mail.php',
+        data: data,
+        success: function( resp ) {
+            location.reload();
+        }
+    })
+});
+</script>
+
+</html>

@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+
+<!-- Basic Page Needs ================================================== -->
+<meta charset="utf-8">
+<title>Scomode Technologies | Industries</title>
+<meta name="description" content="neko-description">
+<meta name="author" content="Scomode">
+
+<!-- Mobile Specific Metas ================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS ================================================== -->
+
+<!-- External plugins -->
+<!-- Revolution slider  -->
+<!-- RS5.0 Main Stylesheet -->
+<link rel="stylesheet" type="text/css" href="js-plugins/rs-plugin/css/settings.css">
+
+<!-- RS5.0 Layers and Navigation Styles -->
+<link rel="stylesheet" type="text/css" href="js-plugins/rs-plugin/css/layers.css">
+<link rel="stylesheet" type="text/css" href="js-plugins/rs-plugin/css/navigation.css">
+<!-- Neko framework  -->
+<link type="text/css" rel="stylesheet" href="custom-icons/css/custom-icons.css">
+<link type="text/css" rel="stylesheet" href="neko-framework/external-plugins/external-plugins.min.css">
+<link type="text/css" rel="stylesheet" href="neko-framework/css/layout/neko-framework-layout.css">
+<link type="text/css" rel="stylesheet" id="color" href="neko-framework/css/color/neko-framework-color.css">
+<link type="text/css" rel="stylesheet" href="css/custom.css">
+<link type="text/css" rel="stylesheet" href="css/style.css">
+<link type="text/css" rel="stylesheet" href="css/responsive.css">
+<!-- Favicons ================================================== -->
+<link rel="shortcut icon" href="images/favico.png">
+
+<!-- <link rel="stylesheet" href="http://basehold.it/30"> -->
+<style></style>
+<script src="neko-framework/external-plugins/modernizr/modernizr.custom.js"></script>
+<script src="js/index.js"></script>
+<link rel="stylesheet" href="build/css/intlTelInput.css">
+<link rel="stylesheet" href="build/css/demo.css">
+<style>
+.modal-header {
+    padding: 15px;
+    border-bottom: none !important;
+    min-height: 16.43px;
+	}
+.modal-content{background-color:#dff0d8!important; padding:5px !important; border-radius:4px !important;}
+div#rtms-welcometext {
+	text-align: center;
+    padding: 200px 0;
+    line-height: 30px;
+}
+div#rtms-welcometext h2 {
+    font-size: 28px;
+    line-height: 40px;
+    color: #424650;
+    margin-bottom: 25px;
+}
+div#rtms-welcometext p {
+    color: #666;
+    font-size: 16px;
+    line-height: 35px;
+    font-family: 'Roboto-Light';
+    text-align: center;
+    padding-bottom: 30px;
+}
+::-webkit-input-placeholder {
+  color: #383737 !important; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #383737 !important;
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  color: #383737 !important; }
+
+.enq-form {
+    background: url(images/form-bg.png);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background-size: cover;
+    padding: 40px 50px;
+    display: none;
+    z-index: 9;
+    height: 750px;
+    margin: auto;
+}
+.form-active .enq-form {
+    display: block;
+}
+.form-div {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    bottom: 0;
+    height: 154px;
+    margin: auto;
+}
+
+.form-div img {
+    float: right;
+    cursor: pointer;
+}
+.input-group label {
+    display: block;
+    text-align: left;
+}
+.input-group input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed #fff;
+    margin-bottom: 5px;
+    color: #fff;
+    padding: 0px;
+    font-size: 16px;
+    width: 280px;
+}
+.input-group label {
+    color: #fff;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+input.en-input-button {
+    width: inherit;
+    border: 1px solid;
+    padding: 0 20px;
+    margin-top: 0px;
+    border-radius: 10px;
+}
+.enq-form h3 {
+    text-align: left;
+    color: #fff;
+}
+@media (max-width: 1024px) {
+    .form-div {
+        left: 0;
+        top: 84px;
+    }
+}
+.tooltip-inner {
+  white-space:nowrap;
+  max-width:none;
+}
+textarea.form-control{border-radius:5px; color:#000;}
+.form-group label{float:left !important;color: #fff;margin-bottom: 0;font-weight: 400}
+</style>
+</head>
+<body class="activate-appear-animation header-transparent header-dark nav-style-1">
+
+<!-- global-wrapper -->
+<div id="global-wrapper"> 
+  <!-- header -->
+  <div class="form-div " data-placement="top" data-toggle="tooltip" title="Enquire Now">
+						<img src="images/form-icon.png" alt="Formicon">
+						<div class="enq-form">
+							<img src="images/close-icon.png" alt="Close">
+							<form name="myform" method="POST" id="form_test"  >
+								<h3>Enquire Now </h3>
+								<div class="input-group">
+									<label>Name</label>
+									<input type="text" name="name" id="name" class="en-input name"><span id="namelocation" style="color:red"></span></td>
+								</div>								
+								<div class="input-group">
+									<label>Email</label>
+									<input type="text" name="email" id="email" class="en-input email"><span id="passwordlocation" style="color:red"></span>
+								</div>
+								<div class="input-group">
+									<label>Phone Number</label>
+									<input type="hidden" name="hidid" id="hidid" >
+									<input type="tel" name="phone" id="phone" class="en-input phone"><span id="numlocation" style="color:red"></span>
+								</div>
+								
+								<div class="input-group">
+									<label>Company</label>
+									<input type="text" name="company" id="company" class="en-input company"><span id="comlocation" style="color:red"></span></td>
+								</div>
+								<div class="input-group">
+									<label>Designation</label>
+									<input type="text" name="designation" id="designation" class="en-input designation"><span id="desglocation" style="color:red"></span></td>
+								</div>		
+								<div class="form-group">
+									<label>Description</label>
+									<textarea name="description" id="description" class="form-control"></textarea></td>
+								</div>		
+								<div class="input-group">
+									<input type="submit" name="submit" id="form_submit" class="en-input-button" value="Submit">
+								</div>
+									
+							</form>
+						</div>
+
+
+					</div>
+						<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+	<!-- Modal content-->
+	<div class="modal-content">
+		
+	  <div class="modal-body">
+	  <button type="button" class="close" data-dismiss="modal">&times;</button>
+		<strong>Thank you for submitting your Interest. We will contact you soon!</strong>
+	  </div>
+	 
+	</div>
+
+  </div>
+</div>
+  <header class="nura-header menu-header navbar-fixed-top" >
+    <div class="container-fluid">
+      <nav class="navbar navbar-default" >
+        <div class="navbar-header"> 
+          <!-- hamburger button -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <!-- / hamburger button --> 
+          
+          <!-- Logo --> 
+          <a class="navbar-brand" href="index.html"> <img src="images/logo.png" alt="Scomode" class="main-logo-light"/> </a> 
+          <!-- /Logo --> 
+        </div>
+        <div class="collapse navbar-collapse"> 
+          <!-- Main navigation -->
+          <ul class="nav navbar-nav navbar-right">
+            <li > <a href="about-us.html">About us</a> </li>
+            <!--<li class="active"> <a href="industries.html" class="has-sub-menu">Industries</a>-->
+            <!--  <ul class="sub-menu industlink">-->
+            <!--    <li> <a href="#ind-telecome" data-toggle="tab" data-image="telecom-banner">Telecom</a> </li>-->
+            <!--    <li> <a href="#ind-power" data-toggle="tab" data-image="power-banner">Power</a> </li>-->
+               
+                <!--<li> <a href="#ind-manu" data-toggle="tab"data-image="manufacture-banner">Manufacturing</a> </li> -->
+            <!--    <li> <a href="#ind-smartciti" data-toggle="tab" data-image="smartcity-banner">Smart Cities</a> </li>-->
+            <!--    <li> <a href="#ind-retail" data-toggle="tab" data-image="retail-banner">Retail</a> </li>-->
+            <!--    <li> <a href="#ind-oilgas" data-toggle="tab" data-image="oilgas-banner">Oil & Gas</a> </li>-->
+            <!--    <li> <a href="#ind-agriiot" data-toggle="tab" data-image="agriiot-banner">Agri IOT</a> </li>-->
+            <!--  </ul>-->
+            <!--</li>-->
+            <li> <a href="industries.html" class="has-sub-menu">Industries</a>
+	            <ul class="sub-menu industlink">
+					<li> <a href="industries.html#ind-telecomes">Telecom</a> </li>
+					<li> <a href="industries.html#ind-powers" >Power</a> </li>
+					<li> <a href="industries.html#ind-minings">Mining</a> </li>
+	                 <!--<li> <a href="#ind-manu" data-toggle="tab"data-image="manufacture-banner">Manufacturing</a> </li> -->
+					<li> <a href="industries.html#ind-smartcitis">Smart Cities</a> </li>
+	     			<li> <a href="industries.html#ind-retails">Retail</a> </li>
+	     			<li> <a href="industries.html#ind-oilgass">Oil & Gas</a> </li>
+             <li> <a href="industries.html#ind-agriiot">Agri IOT</a> </li>
+
+				</ul>
+            </li>
+            <li> <a href="technology.html" class="has-sub-menu">technology</a>
+              <ul class="sub-menu tech-link">
+                <li> <a href="technology.html#scomodes">SCOMODE</a> </li>
+               
+              </ul>
+            </li>
+            <li> <a href="javascript:void(0);" class="has-sub-menu">products</a>
+                 <ul class="sub-menu products-link">
+				
+						<li> <a href="remote-tower-management-system.html">RTMS</a> </li>
+                        <li> <a href="transformer-monitoring-solution.html">TMS</a> </li>
+                       
+						<li> <a href="products_building_management.html">BMS</a> </li>
+						<li> <a href="products_RobotiX_TactiX.html">RobotiX and TactiX</a> </li>
+								</ul>
+             </li>
+            <li> <a href="contact.html">Contact us</a> </li>
+            
+            <!--<li class="request-menu"><a href="javascript:;" >Request Demo</a></li> -->
+            
+          </ul>
+          <!-- / End main navigation --> 
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- header --> 
+  
+  <!-- content -->
+  <main id="content" class="content-section">
+  <section id="slider" class="industry-banner">
+
+        <div class="owl-carousel neko-data-owl neko-owl-theme-1" data-neko_items="1" data-neko_singleitem="true" data-neko_navigation="true" data-neko_paginationnumbers="false" data-neko_autoplay="true" data-neko_touchDrag="false" data-neko_mouseDrag="false">
+          <!-- owl carousel item 1 -->
+          <div class="item item-img1">
+          <div class="col-md-12 banner-title">
+            <h1 class="bannerTitle">Telecom</h1>
+          </div>
+          </div>
+          <!-- / owl carousel item 1 -->
+          <!-- owl carousel item 2 -->
+          <div class="item item-img2">
+          <div class="col-md-12 banner-title">
+            <h1 class="bannerTitle">Telecom</h1>
+          </div>
+          </div>
+          <!-- / owl carousel item 2 -->
+          <!-- owl carousel item 3 -->
+          <div class="item item-img3">
+          <div class="col-md-12 banner-title">
+            <h1 class="bannerTitle">Telecom</h1>
+          </div>
+          </div>
+          <!-- / owl carousel item 3 -->
+        </div>
+<div class="container-fluid inner-slider-tab">
+        <div class="row">
+          
+          <div class="tab-list ">
+            <ul class="nav nav-tabs ind-tab">
+              <li class="active"> <a href="#ind-telecome" data-toggle="tab" data-image="telecom-banner">Telecom</a> </li>
+              <li> <a href="#ind-power" data-toggle="tab" data-image="power-banner">Power</a> </li>
+             
+              <!-- <li> <a href="#ind-mining" data-toggle="tab" data-image="manufacture-banner">Manufacturing</a> </li> -->
+              <li> <a href="#ind-smartciti" data-toggle="tab" data-image="smartcity-banner">Smart Cities</a> </li>
+              <li> <a href="#ind-retail" data-toggle="tab" data-image="retail-banner">Retail</a> </li>
+              <li > <a href="#ind-oilgas" data-toggle="tab" data-image="oilgas-banner">Oil & Gas</a> </li>
+
+              <li class="last"> <a href="#ind-agriiot" data-toggle="tab" data-image="agriiot-banner">Agri IOT</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </section>
+    <section class="" style="display: none" >
+      <div class="container-fluid">
+        <div class="row">
+          
+          <div class="tab-list ">
+            <ul class="nav nav-tabs ind-tab">
+              <li class="active"> <a href="#ind-telecome" data-toggle="tab" data-image="telecom-banner">Telecom</a> </li>
+              <li> <a href="#ind-power" data-toggle="tab" data-image="power-banner">Power</a> </li>
+             
+              <!-- <li> <a href="#ind-mining" data-toggle="tab" data-image="manufacture-banner">Manufacturing</a> </li> -->
+              <li> <a href="#ind-smartciti" data-toggle="tab" data-image="smartcity-banner">Smart Cities</a> </li>
+              <li> <a href="#ind-retail" data-toggle="tab" data-image="retail-banner">Retail</a> </li>
+              <li > <a href="#ind-oilgas" data-toggle="tab" data-image="oilgas-banner">Oil & Gas</a> </li>
+              <li class="last"> <a href="#ind-agriiot" data-toggle="tab" data-image="agriiot-banner">Agri IOT</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="tab-content  nura-tabs">
+      <section class="section-fw tab-pane"  id="ind-telecome">
+        <div class="container">
+          <div class="inner-containerindustry">
+            <div class="row text-center indus-heading">
+              <h4 class="industries-title-hd">Challenges</h4>
+            </div>
+            <div class="flexbox-container">
+              <div class="no-lftpad col-md-6">
+                <figure class="left-border"> <img src="images/industry/telecom/img1.jpg" alt="" > </figure>
+              </div>
+              <div class="col-md-6 lftpad60">
+                <ul class="indust-listing">
+                  <li>
+                    <p>Increasing competitions, reducing margins.</p>
+                  </li>
+                  <li>
+                    <p>Necessity to achieve 100% network up time. </p>
+                  </li>
+                  <li>
+                    <p>Remote site locations – high lead time for maintenance.</p>
+                  </li>
+                  <li>
+                    <p>Increasing cost of hardware maintenance.</p>
+                  </li>
+                  <li>
+                    <p>Increasing cost of skilled manpower.</p>
+                  </li>
+                  <li>
+                    <p>Security and safety of assets at remote sites.</p>
+                  </li>
+                  <li>
+                    <p>Necessity to achieve high output with reduced operation cost.</p>
+                  </li>
+                  <li>
+                    <p>Necessity to retain and increase customer base.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row text-center indus-heading">
+              <div class="col-sm-12">
+              <h4 class="industries-title-hd solution-title">Solutions</h4>
+              </div>
+            </div>
+            <div class="layer flexbox-container">
+              <div class="col-md-6 no-lftpad">
+              <h3 class="indus-subtitle-hd">Remote Tower Management System</h3>
+                <p class="sub-txt">Remote Tower Management System is a comprehensive remote IOIT based Telecom Tower Monitoring Solution. The system can monitor remote devices of various types and interfaces configured via Scomode’s IOIT platform. RTMS can be interfaced with analog or digital sensors and configured for various operational and monitoring control.</p>
+                <p class="sub-txt" >RTMS system has provision to take a decision in the case of emergency depending on the configurations and pattern history. RTMS has the capacity to learn the critical system components and become intelligent over a period of time.</p>
+                 <a href="remote-tower-management-system.html" class="read-morelink">Read More<i></i></a> </div>
+              <div class="col-md-6 lftpad60">
+                <figure class="right-border"> <img src="images/industry/telecom/img2.jpg" alt="" ></figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-fw tab-pane"  id="ind-power">
+        <div class="container">
+          <div class="inner-containerindustry">
+            <div class="row text-center indus-heading">
+              <h4 class="industries-title-hd">Challenges</h4>
+            </div>
+            <div class="layer flexbox-container">
+              <div class="no-lftpad col-md-6">
+                <figure class="left-border"> <img src="images/industry/power/img1.jpg" alt="" > </figure>
+              </div>
+              <div class="col-md-6 lftpad60">
+                <ul class="indust-listing">
+                  <li>
+                    <p>Digital immaturity</p>
+                  </li>
+                  <li>
+                    <p>A variety of distributed systems, lack of a common consolidation platform</p>
+                  </li>
+                  <li>
+                    <p>Lack of methodical control on distribution, consumption, leakage, energy
+                      accounting & demand forecasting</p>
+                  </li>
+                  <li>
+                    <p>Poor consumer energy planning due to lack of visibility on usage, peak and
+                      lean hour charges</p>
+                  </li>
+                  <li>
+                    <p>Remote site locations – high lead time for maintenance.</p>
+                  </li>
+                  <li>
+                    <p>Expensive hardware</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="container no-padding">
+            <div class="no-lftpad col-md-6 pull-right  col-sm-12 col-xs-12">
+                <figure class="right-border"> <img src="images/industry/power/img2.jpg" alt="" > </figure>
+              </div>
+              <div class="col-md-6 no-lftpad pull-left">
+                <ul class="indust-listing">
+                  <li>
+                    <p>High downtime impact </p>
+                  </li>
+                  <li>
+                    <p>Increasing cost of hardware maintenance.</p>
+                  </li>
+                  <li>
+                    <p>Increasing cost of skilled manpower.</p>
+                  </li>
+                  <li>
+                    <p>Security and safety of assets at remote sites.</p>
+                  </li>
+                  <li>
+                    <p>The necessity to achieve high output with reduced operation cost.</p>
+                  </li>
+                </ul>
+              </div>
+              
+            </div>
+            <div class="row text-center indus-heading">
+              <h4 class="industries-title-hd solution-title">Solutions</h4>
+            </div>
+            <div class="layer flexbox-container">
+              <div class="no-lftpad col-md-6">
+                <figure class="left-border"> <img src="images/industry/power/img3.jpg" alt="" > </figure>
+              </div>
+              <div class="col-md-6 lftpad60">
+                <h3 class="indus-subtitle-hd">Smart Grid Management Solution</h3>
+                <p class="sub-txt">Scomode Smart Grid Management Solution connects with power grids, substations, solar power stations to monitor equipment like transformers, turbines and other critical equipment to capture device specific operational data like bushing parameters, electrical parameters, temperature, Oil levels, Gas levels, fuel levels etc. The data is then transferred to Scomode’s cloud SGMS platform to monitor, control and define operational activities centrally</p>
+              </div>
+            </div>
+            <div class="layer flexbox-container">
+              <div class="col-md-6 no-lftpad">
+                <h3 class="indus-subtitle-hd">Advanced Metering Infrastructure</h3>
+                <p class="sub-txt"> AMI completes the power supply chain digitization circle by seamlessly integrating with SGMS. Advanced Metering Infrastructure (AMI) takes greater control over energy costs and a more reliable energy supply for consumers.</p>
+                <p class="sub-txt">Energy meter helps utilities to have a track of how much energy is been distributed from the grid and consumed at the endpoint. This, in turn, enables precise energy accounting, demand forecasting and streamlining grid operations. Smart metering enables consumers to get energy info from utilities on their usage pattern and peak hour pricing. This also helps them inefficient billing and energy planning.</p>
+              </div>
+              <div class="lftpad60 col-md-6">
+                <figure > <img src="images/industry/power/img4.png" alt="" > </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-fw tab-pane"  id="ind-mining">
+        <div class="container">
+          <div class="inner-containerindustry">
+            <div class="row text-center indus-heading">
+              <h4 class="industries-title-hd">Challenges</h4>
+            </div>
+            <div class="layer flexbox-container">
+              <div class="col-md-6 no-lftpad">
+                <figure class="left-border"> <img src="images/industry/indus-img1.jpg" alt="" ></figure>
+              </div>
+              <div class="col-md-6  lftpad60">
+                <ul class="indust-listing">
+                  <li>
+                    <p>Heavy security and surveillance requirement to reduce pilferage, maintain operational sanity & asset security.</p>
+                  </li>
+                  <li>
+                    <p>Need for constant process innovation.</p>
+                  </li>
+                  <li>
+                    <p>Heavy power and fuel consumption. Challenge to maintain 	OPEX balance.</p>
+                  </li>
+                  <li>
+                    <p> Never ending demand to enhance dispatching ability to beat price fluctuation curve.</p>
+                  </li>
+                  <li>
+                    <p>High downtime impact.</p>
+                  </li>
+                  <li>
+                    <p>Increasing cost of hardware maintenance.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="container no-padding">
+              <div class="col-md-6 no-lftpad pull-right col-sm-12 col-xs-12">
+                <figure class="right-border"> <img src="images/industry/indus-img2.jpg" alt="" > </figure>
+              </div>
+              <div class="col-md-6 no-lftpad pull-left">
+                <ul class="indust-listing">
+                  <li>
+                    <p>Lack of comprehensive, robust and scalable pit to consumer
+                      solution that can drive operational optimization and increased control
+                      on end to end process.</p>
+                  </li>
+                  <li>
+                    <p>High data churn and need for comprehensive data analytics for
+                      precise forecasting and efficient planning.</p>
+                  </li>
+                  <li>
+                    <p>Complex Man, Machine and Material movement operations.</p>
+                  </li>
+                  <li>
+                    <p>Complex multiple vendor ecosystems.</p>
+                  </li>
+                  <li>
+                    <p>The critical time to market and cost to market influence on the bottom line.</p>
+                  </li>
+                </ul>
+              </div>
+            
+            </div>
+            <div class="row text-center indus-heading">
+              <h4 class="industries-title-hd solution-title">Solutions</h4>
+            </div>
+            <div class="layer flexbox-container">
+              <div class="col-md-6 no-lftpad">
+                <figure class="left-border"> <img src="images/industry/indus-img3.jpg" alt="" ></figure>
+              </div>
+              <div class="col-md-6 lftpad60">
+                <h3 class="indus-subtitle-hd">Integrated Transport Management System</h3>
+                <p class="sub-txt"> ITMS is a comprehensive solution that simplifies business critical processes in supply chain & material movement. It provides a common platform for sales, logistics, outbound, inbound, service delivery & vendor management processes. Thus leading to synchronized and efficient operations.</p>
+                 <a href="integrated-transport-management-system.html" class="read-morelink">Read More<i></i></a>
+              </div>
+            </div>
+            <div class="layer flexbox-container">
+              <div class="col-md-6 no-lftpad">
+                <h3 class="indus-subtitle-hd">HEMM  Monitoring and Maintenance</h3>
+                <p class="sub-txt">Mining is a machine intensive industry, any downtime has a high impact on operations.  HEMM Monitoring and Maintenance solution enables proactive monitoring before problems arise, using machine sensors to monitor real-time environmental and performance indicators. Alerts captured with telematics technology combined with warranty claims information enable preventive maintenance.</p>
+              </div>
+              <div class="col-md-6 lftpad60 ">
+                <figure class="right-border"> <img src="images/industry/indus-img4.jpg" alt="" > </figure>
+              </div>
+            </div>
+            <div class="layer flexbox-container">
+              <div class="col-md-6 no-lftpad">
+                <figure class="left-border"> <img src="images/industry/indus-img5.jpg" alt="" > </figure>
+              </div>
+              <div class="col-md-6 lftpad60">
+                <h3 class="indus-subtitle-hd">Fuel Management System</h3>
+                <p class="sub-txt">The mining industry is one of the major consumers of fuel. Approximately 30-35% of OPEX is towards fuel.  FMS helps reduce fuel pilferage and prevent malpractices to reduce fuel costs by 25%. FMS enables fuel monitoring at fixed bunks, Mobile browser, Storage Tanks, Truck fuel consumption and Genset fuel consumption. </p>
+              </div>
+            </div>
+            <div class="layer flexbox-container">
+              <div class="col-md-6 no-lftpad">
+                <h3 class="indus-subtitle-hd">Manless Weighbridges and Access control systems</h3>
+                <p class="sub-txt">Weighted is a very critical step in any supply chain process, human interference reduces operational efficiency.  has deployed manless weighbridges at large manufacturing and mining units which enable them to capture weighment, map weighment to the respective material movement process, integrate with ERP systems without compromising on the control that a human would have if any problem arises while weighment. The entire wieghment process can be monitored live from centralized control centers.</p>
+              </div>
+              <div class="col-md-6 lftpad60 no-rhtpad">
+                <figure class="right-border"> <img src="images/industry/indus-img6.jpg" alt="" > </figure>
+              </div>
+            </div>
+            <div class="layer flexbox-container">
+              <div class="col-md-6 no-lftpad">
+                <figure class="left-border"> <img src="images/industry/indus-img7.jpg" alt="" > </figure>
+              </div>
+              <div class="col-md-6 lftpad60 no-lftpad ">
+                <h3 class="indus-subtitle-hd">Biometric authentication and alcohol sensing</h3>
+                <p class="sub-txt">Biometric authentication and alcohol sensing at security gates is another point where human interference adds no value to any organization. ’s automized access gates with inbuilt biometric and alcohol sensors provide the advantage of managing manless access control systems from centralized control centers. Reducing human intervention from access control systems means reducing costs and increasing operational governance. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-fw tab-pane"  id="ind-smartciti">
+        <div class="container">
+          <div class="inner-containerindustry">
+            <div class="row text-center indus-heading">
+              <h4 class="industries-title-hd">Challenges</h4>
+            </div>
+            <div class="layer flexbox-container">
+              <div class="no-lftpad col-md-6">
+                <figure class="left-border"> <img src="images/industry/smartcities/img1.jpg" alt="" > </figure>
+              </div>
+              <div class="col-md-6 lftpad60">
+                <ul class="indust-listing">
+                  <li>
+                    <p>Large distributed hardware network, lack of common gateway to 
+                      integrate all</p>
+                  </li>
+                  <li>
+                    <p>Never ending demand of infrastructure to process increasing 
+                      volumes of structured and unstructured data</p>
+                  </li>
+                  <li>
+                    <p>Large complexity to integrate various monitoring systems like power 
+                      distribution, water distribution, traffic management & building 
+                      management to build a unified smart city platform.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="container no-padding">
+             <div class="lftpad60 col-md-6  no-lftpad col-sm-12 pull-right col-xs-12">
+                <figure class="right-border"> <img src="images/industry/smartcities/img2.jpg" alt="" > </figure>
+              </div>
+              <div class="col-md-6 no-lftpad pull-left">
+                <ul class="indust-listing">
+                  <li>
+                    <p>Complex Man, Machine & Methods data model</p>
+                  </li>
+                  <li>
+                    <p>Need of shorter data processing turn around time for efficient and 
+                      effective systems</p>
+                  </li>
+                  <li>
+                    <p>High impact of system downtime</p>
+                  </li>
+                  <li>
+                    <p>Vast and distributed maintenance perimeter</p>
+                  </li>
+                </ul>
+              </div>
+             
+            </div>
+            <div class="row text-center indus-heading">
+              <h4 class="industries-title-hd solution-title">Solutions</h4>
+            </div>
+            <div class="layer flexbox-container">
+              <div class="no-lftpad col-md-6">
+                <figure class="left-border"> <img src="images/industry/smartcities/img3.jpg" alt="" > </figure>
+              </div>
+              <div class="col-md-6 lftpad60">
+                <h3 class="indus-subtitle-hd">Building Management Solution</h3>
+                <p class="sub-txt"> BMS is a comprehensive home, building, office & warehouse management solution. With a network of smart  gateways, BMS helps manage and monitor building temperature, power consumption patterns, environmental parameters, demand response, safety & fire alarms, failure detection and early warning systems. It also enables smart offices to enhance their occupant experience, asset and ROI management, Staff productivity management, meeting room and productivity scheduling.</p>
+                 <a href="products_building_management.html" class="read-morelink">Read More<i></i></a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-fw tab-pane"  id="ind-retail">
+        <div class="container">
+          <div class="inner-containerindustry">
+            <div class="row text-center indus-heading">
+              <h4 class="industries-title-hd">Challenges</h4>
+            </div>
+            <div class="flexbox-container">
+              <div class="no-lftpad col-md-6">
+                <figure class="left-border"> <img src="images/industry/retail/img1.jpg" alt="" > </figure>
+              </div>
+              <div class="col-md-6 lftpad60">
+                <ul class="indust-listing">
+                  <li>
+                    <p> Increasing shift of market share to online stores.</p>
+                  </li>
+                  <li>
+                    <p> Retain and grow customer base</p>
+                  </li>
+                  <li>
+                    <p> Meet increasing customer demand for shopping experience and choices.</p>
+                  </li>
+                  <li>
+                    <p>Reducing profit margins, increasing pilferage</p>
+                  </li>
+                  <li>
+                    <p>Increasing cost of skilled manpower</p>
+                  </li>
+                  <li>
+                    <p>Arriving at the right formula to optimize shelf space utilization</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row text-center indus-heading">
+            <div class="col-sm-12">
+              <h4 class="industries-title-hd solution-title">Solutions</h4>
+              </div>
+            </div>
+            <div class="layer flexbox-container">
+              <div class="col-md-6 no-lftpad">
+                <h3 class="indus-subtitle-hd">Enhanced Customer Experience Platform</h3>
+                <p class="sub-txt">  Enhanced Customer Experience Platform enables retailers to drive customer shopping patterns, product sales patterns, shelf space utilization patterns, cross selling and up selling combinations. This helps to enhance customer experience, revenue, the reduction is pilferage, customer base and ability to drive customer satisfaction time and again. Operational efficiency can also be achieved as valuable data is collected by using a network of smart electronic shelf labels installed in the stores.</p>
+                 <a href="products_enhanced_customer.html" class="read-morelink">Read More<i></i></a> </div>
+               
+              <div class="lftpad60 col-md-6">
+                <figure class="right-border"> <img src="images/industry/retail/img2.jpg" alt="" > </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-fw tab-pane"  id="ind-oilgas">
+        <div class="container">
+          <div class="inner-containerindustry">
+            <div class="row text-center indus-heading">
+              <h4 class="industries-title-hd">Challenges</h4>
+            </div>
+            <div class="layer flexbox-container">
+              <div class="no-lftpad col-md-6">
+                <figure class="left-border"> <img src="images/industry/oilgas/img1.jpg" alt="" > </figure>
+              </div>
+              <div class="col-md-6 lftpad60">
+                <p class="sub-txt">As demand shifts and pricing remains volatile, the oil and gas industry has faced significant challenges across all aspects of the business, including operations, revenue/profit margins, and environmental sustainability.</p>
+                <p class="sub-txt">The industry holds a unique set of complexities that can lead to a multitude of setbacks. Reserves are drying out, forcing companies to move their operations to more remote and therefore difficult to monitor locations. Analyzing and gathering data in more remote settings makes it harder to produce real-time feedback and results. Consequently, there is a lack of operational insight, resulting in missed opportunities to use data to make business-critical decisions that impact the bottom line.</p>
+              </div>
+            </div>
+            <div class="flexbox-container">
+              <div class="col-md-6 no-lftpad">
+                <h4 class="indus-list-title">The following is the need of the hour</h4>
+                <ul class="indust-listing">
+                  <li>
+                    <p>Identify minor problems before they become major</p>
+                  </li>
+                  <li>
+                    <p>Digital maturity</p>
+                  </li>
+                  <li>
+                    <p> Simply maintenance process and reduce the downtime</p>
+                  </li>
+                  <li>
+                    <p>Collect data to inform key decisions</p>
+                  </li>
+                  <li>
+                    <p>Avoid safety hazards and losses due to fuel leaks</p>
+                  </li>
+                  <li>
+                    <p>Increase environmental efficiency.</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="lftpad60 col-md-6">
+                <figure class="right-border"> <img src="images/industry/oilgas/img2.jpg" alt="" > </figure>
+              </div>
+            </div>
+            <div class="row text-center indus-heading">
+              <h4 class="industries-title-hd solution-title">Solutions</h4>
+            </div>
+            <div class="layer flexbox-container">
+              <div class=" no-lftpad col-md-6">
+                <figure class="left-border"> <img src="images/industry/oilgas/img3.jpg" alt="" > </figure>
+              </div>
+              <div class="col-md-6 lftpad60 ">
+                <h3 class="indus-subtitle-hd">Operation Management System</h3>
+                <p class="sub-txt">Scomode OMS is an integrated platform enabling users to harness the potential of field data from distributed machines & Sensors by capturing them, applying them the custom build processes and rules and build an information system that drives the organization towards operational optimization.</p>
+               <a href="operation-management-system.html" class="read-morelink">Read More<i></i></a> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-fw tab-pane"  id="ind-agriiot">
+        <div class="container">
+          <div class="inner-containerindustry">
+            <div class="row text-center indus-heading">
+              <h4 class="industries-title-hd">Challenges</h4>
+            </div>
+            <div class="layer flexbox-container">
+              <div class="no-lftpad col-md-6">
+                <figure class="left-border"> <img src="images/industry/AgriIOT/RobotiX.png" alt="" > </figure>
+              </div>
+              <div class="col-md-6 lftpad60">
+                <p class="sub-txt">Our platform is built to solve problems of Developing Agri-Economies for both Individual growers & Commercial Agriculture in following areas;</p>
+               
+              </div>
+            </div>
+            <div class="flexbox-container">
+              <div class="col-md-6 no-lftpad">
+              
+                <ul class="indust-listing">
+                  <li>
+                    <p>Fragmented land Management</p>
+                  </li>
+                  <li>
+                    <p>Irrigation Planning & Automation</p>
+                  </li>
+                  <li>
+                    <p>Seed R&D</p>
+                  </li>
+                  <li>
+                    <p>Sustainable Practices</p>
+                  </li>
+                  <li>
+                    <p>Mechanization</p>
+                  </li>
+                  <li>
+                    <p>Supply chain management</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="lftpad60 col-md-6">
+                <figure class="right-border"> <img src="images/industry/AgriIOT/AgriAnaltics.jpg" alt="" > </figure>
+              </div>
+            </div>
+            <div class="row text-center indus-heading">
+              <h4 class="industries-title-hd solution-title">Solutions</h4>
+            </div>
+            <div class="layer flexbox-container">
+              
+              <div class="col-md-6 lftpad60 ">
+                <ul class="indust-listing">
+                  <li>
+                    <p>GIS and Map Based Search</p>
+                  </li>
+                  <li>
+                    <p>Farmer Management</p>
+                  </li>
+                  <li>
+                    <p>Agri-Input Management</p>
+                  </li>
+                  <li>
+                    <p>Pre-Harvest Cropping Process planning</p>
+                  </li>
+                  <li>
+                    <p>Cropping Process Tracking</p>
+                  </li>
+                  <li>
+                    <p>Farmland Tracking</p>
+                  </li>
+                  <li>
+                    <p>Expenses Tracking</p>
+                  </li>
+                  <li>
+                    <p>Yield Management</p>
+                  </li>
+                </ul>
+               
+                <a href="products_RobotiX_TactiX.html" class="read-morelink">Read More<i></i></a> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+  <!-- / content --> 
+  
+<!-- footer -->
+  <footer id="main-footer" class="dark-color">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+           <div class="row">
+            <div class="col-md-4 col-sm-4">
+                 <div class="footer-widget">
+            <h3>Technology</h3>
+            <ul class="list-unstyled">
+           
+              <li class="no-pt"><a href="technology.html#scomodes">SCOMODE</a></li>
+             
+            </ul>
+          </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                 	<div class="footer-widget">
+            <h3>Industries</h3>
+          <div class="no-padding">
+              <ul class="list-unstyled pull-left">
+              <li class="no-pt"><a href="industries.html#ind-telecomes">Telecom</a></li>
+              <li class="no-pt"><a href="industries.html#ind-powers" >Power</a></li>
+                <li class="no-pt"><a href="industries.html#ind-minings">Mining</a></li>
+               <li class="no-pt"><a href="industries.html#ind-smartcitis">Smart Cities</a></li>
+                <li><a href="industries.html#ind-retails">Retail</a></li>
+                <li><a href="industries.html#ind-oilgass">Oil & Gas</a></li>
+                <li><a href="industries.html">Agri IOT</a></li>
+                
+              </ul>
+             
+            </div>
+          
+          </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                	<div class="footer-widget">
+            <h3>Products</h3>
+          <div class="no-padding">
+              <ul class="list-unstyled pull-left">
+          
+              <li class="no-pt"><a href="remote-tower-management-system.html" >RTMS</a></li>
+                <li class="no-pt"><a href="transformer-monitoring-solution.html">TMS</a></li>
+  
+                <li><a href="products_building_management.html">BMS</a></li>
+     
+             
+              </ul>
+              
+            </div>
+          
+          </div>
+            </div>
+           </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                  <div class="footer-widget cont">
+                    <h3 id="contact-us">Contact Us</h3>
+                    <h5><strong>Singapore</strong></h5>
+                <p >10, Kallang Avenue, #05-17 Aperia Tower 2,<br />
+                  Singapore - 339510.
+                </p>
+			        	<ul class="list-unstyled">
+                <li><strong>T</strong>: +65 6776 7819 </li>
+                <li><strong>F</strong>: +65 6776 7817</li>
+                <li><strong>E</strong>: <a href="mailto:info@scomode.com">info@scomode.com</a></li>
+                </ul>
+                         
+                    </div>
+                    <div class="footer-widget cont">
+                      <!-- <p class="emal">Email</p>-->
+                      <!-- <p><a href="mailto:ncspl@Scomodelabs.com">ncspl@Scomodelabs.com</a></p>-->
+                
+                    </div>
+                  </div>
+            <div class="col-md-6 col-sm-6">
+            
+              <div class="footer-widget cont last">
+                <h5><strong>India</strong></h5>
+                
+                <p >1st Floor, Lakshmi Enclave II, <br />
+                  Sarojini Street, Rajaji Nagar,<br />
+                  Pallavaram, Chennai. TN - 600 041.
+              </p>         
+              <br>
+                <p >#46, <br />
+                   ATT Colony, Coimbatore. TN – 641 018.
+                </p>
+                  <ul class="list-unstyled">
+                      <li><strong>T</strong>: +91 86104 43057</li>
+                      <li><strong>E</strong>: <a href="mailto:info@scomode.com">info@scomode.com</a></li>
+                  </ul>
+              </div>
+        
+            </div>
+          </div>
+          
+      </div>
+          </div>
+            
+        </div>
+        </div>
+      
+        </div>
+        <div class="clearfix"></div>
+        <!--<div class="container">
+        <div class="row resp">
+         <div class="col-sm-6  ">
+           
+             <div class="footer-widget clearfix">
+            <h3>Request for a DEMO</h3>
+            <input type="text" class="form-input" placeholder="Email">
+            <button type="submit" class="submit-btn">Submit</button>
+          </div>
+          </div>
+          <div class="col-sm-6 col-xs-12 ">
+            <div class="">
+              <ul class="social-icons main-color circle social-hover">
+                <li> <a href="javascript:;" class="facebook" title="facebook"><i class="icon-glyph-320"></i></a> </li>
+                <li> <a href="javascript:;" class="linkedin" title="linkedin"><i class="icon-glyph-308"></i></a> </li>
+                <li> <a href="javascript:;" class="twitter" title="twitter"><i class="icon-glyph-339"></i></a> </li>
+              </ul>
+            </div>
+          </div>
+          </div>
+          </div> -->
+      
+      
+     
+         
+        
+      
+    
+    <div class="container-fluid no-padding">
+      <div class="copy-rights">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <p class="company-copyrights-text">©2022,  Scomode Technologies</p>
+            </div>
+           
+            <div class="col-md-6  col-sm-12"> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- / footer --> 
+</div>
+<!-- global wrapper --> 
+
+<!-- End Document ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script type="text/javascript" src="neko-framework/js/jquery/jquery-2.1.4.min.js"></script> 
+<script src="js/easyResponsiveTabs.js"></script> 
+<script type="text/javascript" src="neko-framework/js/jquery-ui/jquery-ui-1.8.23.custom.min.js"></script> 
+
+<!-- external framework plugins --> 
+<script type="application/javascript" src="neko-framework/external-plugins/external-plugins.min.js"></script> 
+<!-- neko framework script --> 
+<script type="text/javascript" src="neko-framework/js/neko-framework.js"></script> 
+
+<!-- external custom plugins --> 
+
+<!-- Revolution slider --> 
+<script type="text/javascript" src="js-plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script> 
+<script type="text/javascript" src="js-plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script> 
+
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
+	(Load Extensions only on Local File Systems !  
+	The following part can be removed on Server for On Demand Loading) --> 
+<script type="text/javascript" src="js-plugins/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script> 
+<script type="text/javascript" src="js-plugins/rs-plugin/js/extensions/revolution.extension.carousel.min.js"></script> 
+<script type="text/javascript" src="js-plugins/rs-plugin/js/extensions/revolution.extension.kenburn.min.js"></script> 
+<script type="text/javascript" src="js-plugins/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script> 
+<script type="text/javascript" src="js-plugins/rs-plugin/js/extensions/revolution.extension.migration.min.js"></script> 
+<script type="text/javascript" src="js-plugins/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script> 
+<script type="text/javascript" src="js-plugins/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script> 
+<script type="text/javascript" src="js-plugins/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script> 
+<script type="text/javascript" src="js-plugins/rs-plugin/js/extensions/revolution.extension.video.min.js"></script> 
+
+<!-- neko custom script --> 
+<script src="js/custom.js"></script> 
+<script type="text/javascript" src="js/common-script.js"></script>
+<script src="build/js/intlTelInput.js"></script>
+<script>
+		 $(document).ready(function () 
+		{	
+			$('.selected-flag').on("change",function()
+			{     
+				var title_code=$('.selected-flag').attr('title');		
+				$('#hidid').val(title_code);
+			});
+		});	
+	</script>		
+<script type="text/javascript">  
+	function validate(){  
+		var name = $( '#name' ).val().trim();
+		var email = $( '#email' ).val().trim();
+		var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+		var num = $( '#phone' ).val().trim();
+		var company = $( '#company' ).val().trim();
+		var desg = $( '#designation' ).val().trim();
+		//var name=document.myform.name.value;  
+		var x=document.myform.email.value;  
+		var atposition=x.indexOf("@");  
+		var dotposition=x.lastIndexOf(".");	  
+		//var num=document.myform.phone.value;
+		//var company=document.myform.company.value; 
+		//var desg=document.myform.designation.value; 
+		var status=false;
+		
+	if(!name.match(/^[a-zA-Z\.]+$/)){  
+		document.getElementById("namelocation").innerHTML= " <img src='img/close_red.png'/> Please Enter Your Name";  
+		status=false;
+	}else{  
+		document.getElementById("namelocation").innerHTML=" <img src='img/add.png'/>";  
+		status=true;
+	}  
+	if (reg.test(email) == false) 
+            {
+                document.getElementById("passwordlocation").innerHTML=" <img src='img/close_red.png'/> Please Enter Valid Email Address ";
+                status=false;
+            }
+			else{ 
+			document.getElementById("passwordlocation").innerHTML=" <img src='img/add.png'/>";  
+	 }   
+	<!-- if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){    -->
+		<!-- document.getElementById("passwordlocation").innerHTML=" <img src='img/close_red.png'/> Please Enter Valid Email Address ";   -->
+		<!-- status=false;  -->
+	<!-- }else{   -->
+		<!-- document.getElementById("passwordlocation").innerHTML=" <img src='img/add.png'/>";   -->
+	<!-- }   -->
+	 if(num==""){  
+		document.getElementById("numlocation").innerHTML= " <img src='img/close_red.png'/> Please Enter Your Mobile Number ";  
+		status=false;
+	}else{  
+		document.getElementById("numlocation").innerHTML=" <img src='img/add.png'/>";  
+		
+	}	
+	if(company==""){  
+		document.getElementById("comlocation").innerHTML= " <img src='img/close_red.png'/> Please Enter Your Company Name";  
+		status=false;
+	}else{  
+		document.getElementById("comlocation").innerHTML=" <img src='img/add.png'/>";  
+		
+	}
+	if(desg==""){  
+		document.getElementById("desglocation").innerHTML= " <img src='img/close_red.png'/> Please Enter Your Designation";  
+		status=false;
+	}else{  
+		document.getElementById("desglocation").innerHTML=" <img src='img/add.png'/>";  		
+	}	
+		<!-- var title_code=$('.selected-flag').attr('title'); -->
+		<!-- var CodeSplit=title_code.split(':');			 -->
+		<!-- var CountryCode=CodeSplit[1].trim()+num; -->
+		<!-- $('#hidid').val(countrycode); -->
+						
+		return status; 				
+	}  
+	$('#form_test').on('submit', function(e) {
+	 e.preventDefault();
+	var  rtnValue=validate();
+	if(rtnValue==true)
+	{
+//	action="contact-form-handler.php" id="form_test" onsubmit="return validate()"
+    //Prevents default submit
+    var form = $(this); 
+    var post_url = form.attr('action'); 
+    var post_data = form.serialize(); //Serialized the form data for process.php
+    //$('#loader', form).html('<img src="../img/loader.gif" /> Please Wait...');
+    $.ajax({
+        type: 'POST',
+        url: 'contact-form-handler.php', // Your form script
+        data: post_data,
+        success: function(msg) {
+		if(msg=="0")
+		{
+		$('#myModal').modal('show'); 
+		 $( '#name' ).val("");
+		}
+		else
+		{
+		$('#form_test img').css("display","none");
+		$( '#name' ).val("");
+		$( '#email' ).val("");
+		$( '#phone' ).val("");
+		$( '#company' ).val("");
+		$( '#designation' ).val("");
+		$( '#description' ).val("");		
+		$('#myModal').modal('show'); 
+		$('.enq-form').fadeToggle();
+		 $('.form-div img').click(function(){
+            $('.enq-form').show();
+        });
+		$('.enq-form img').click(function(){
+            $('.enq-form').hide();
+        });
+		}
+            //$(form).fadeOut(500, function(){
+              //  form.html(msg).fadeIn();
+            //});
+        }
+    });
+	}
+});
+
+	
+	$("#phone").intlTelInput({
+      // allowDropdown: false,
+      // autoHideDialCode: false,
+      // autoPlaceholder: "off",
+      // dropdownContainer: "body",
+      // excludeCountries: ["us"],
+      // formatOnDisplay: false,
+      geoIpLookup: function(callback) {
+        $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+         var countryCode = (resp && resp.country) ? resp.country : "";
+         callback(countryCode);
+        });
+      },
+      // hiddenInput: "full_number",
+      // initialCountry: "auto",
+      // nationalMode: false,
+      // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+      // placeholderNumberType: "MOBILE",
+      // preferredCountries: ['cn', 'jp'],
+      // separateDialCode: true,
+      utilsScript: "js/Countrycode/utils.js"
+    });
+	
+</script>
+<script>
+    $(function(){
+        $('.form-div img').click(function(){
+            $(this).parent().toggleClass('form-active');
+        });
+        $('.enq-form img').click(function(){
+            $(this).parent().parent().removeClass('form-active');
+        });
+    });
+</script>
+</body>
+</html>

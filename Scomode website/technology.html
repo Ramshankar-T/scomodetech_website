@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+
+<!-- Basic Page Needs ================================================== -->
+<meta charset="utf-8">
+<title>Scomode Technologies | Technology</title>
+<meta name="description" content="neko-description">
+<meta name="author" content="Scomodex">
+
+<!-- Mobile Specific Metas ================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS ================================================== -->
+
+<!-- External plugins -->
+<!-- Revolution slider  -->
+<!-- RS5.0 Main Stylesheet -->                                                                                                                                  
+<link rel="stylesheet" type="text/css" href="js-plugins/rs-plugin/css/settings.css">
+
+<!-- RS5.0 Layers and Navigation Styles -->
+<link rel="stylesheet" type="text/css" href="js-plugins/rs-plugin/css/layers.css">
+<link rel="stylesheet" type="text/css" href="js-plugins/rs-plugin/css/navigation.css">
+<!-- Neko framework  -->
+<link type="text/css" rel="stylesheet" href="custom-icons/css/custom-icons.css">
+<link type="text/css" rel="stylesheet" href="neko-framework/external-plugins/external-plugins.min.css">
+<link type="text/css" rel="stylesheet" href="neko-framework/css/layout/neko-framework-layout.css">
+<link type="text/css" rel="stylesheet" id="color" href="neko-framework/css/color/neko-framework-color.css">
+<link type="text/css" rel="stylesheet" href="css/custom.css">
+<link type="text/css" rel="stylesheet" href="css/animation.css">
+<link type="text/css" rel="stylesheet" href="css/style.css">
+<link type="text/css" rel="stylesheet" href="css/responsive.css">
+<!-- Favicons ================================================== -->
+<link rel="shortcut icon" href="images/favico.png">
+
+<link rel="stylesheet" href="build/css/intlTelInput.css">
+<link rel="stylesheet" href="build/css/demo.css">
+<!-- <link rel="stylesheet" href="http://basehold.it/30"> -->
+
+<script src="neko-framework/external-plugins/modernizr/modernizr.custom.js"></script>
+<style>
+.modal-header {
+    padding: 15px;
+    border-bottom: none !important;
+    min-height: 16.43px;
+	}
+.modal-content{background-color:#dff0d8!important; padding:5px !important; border-radius:4px !important;}
+div#rtms-welcometext {
+	text-align: center;
+    padding: 200px 0;
+    line-height: 30px;
+}
+div#rtms-welcometext h2 {
+    font-size: 28px;
+    line-height: 40px;
+    color: #424650;
+    margin-bottom: 25px;
+}
+div#rtms-welcometext p {
+    color: #666;
+    font-size: 16px;
+    line-height: 35px;
+    font-family: 'Roboto-Light';
+    text-align: center;
+    padding-bottom: 30px;
+}
+::-webkit-input-placeholder {
+  color: #383737 !important; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #383737 !important;
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  color: #383737 !important; }
+
+.enq-form {
+    background: url(images/form-bg.png);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background-size: cover;
+    padding: 40px 50px;
+    display: none;
+    z-index: 9;
+    height: 750px;
+    margin: auto;
+}
+.form-active .enq-form {
+    display: block;
+}
+.form-div {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    bottom: 0;
+    height: 154px;
+    margin: auto;
+}
+
+.form-div img {
+    float: right;
+    cursor: pointer;
+}
+.input-group label {
+    display: block;
+    text-align: left;
+}
+.input-group input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed #fff;
+    margin-bottom: 5px;
+    color: #fff;
+    padding: 0px;
+    font-size: 16px;
+    width: 280px;
+}
+.input-group label {
+    color: #fff;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+input.en-input-button {
+    width: inherit;
+    border: 1px solid;
+    padding: 0 20px;
+    margin-top: 0px;
+    border-radius: 10px;
+}
+.enq-form h3 {
+    text-align: left;
+    color: #fff;
+}
+@media (max-width: 1024px) {
+    .form-div {
+        left: 0;
+        top: 84px;
+    }
+}
+.tooltip-inner {
+  white-space:nowrap;
+  max-width:none;
+}
+
+
+textarea.form-control{border-radius:5px; color:#000;}
+.form-group label{float:left !important;color: #fff;margin-bottom: 0;font-weight: 400}
+
+.tech-tabs {
+display: block;
+}
+</style>
+</head>
+<body class="activate-appear-animation header-transparent header-dark nav-style-1"><!-- global-wrapper -->
+<div id="global-wrapper"> 
+  <!-- header -->
+  
+  <div data-placement="top" data-toggle="tooltip" title="Enquire Now" class="form-div "> <img alt="Formicon" src="images/form-icon.png" /> 
+    <div class="enq-form"> <img alt="Close" src="images/close-icon.png" /> <form name="myform" method="POST" id="form_test"> <h3>Enquire Now </h3> 
+        <div class="input-group"> 
+          <label>Name</label> <input name="name" id="name" class="en-input name" type="text" /> 
+        </div> 
+        <div class="input-group"> 
+          <label>Email</label> <input name="email" id="email" class="en-input email" type="text" /> 
+        </div> 
+        <div class="input-group"> 
+          <label>Phone Number</label> <input name="hidid" id="hidid" type="hidden" /> <input name="phone" id="phone" class="en-input phone" type="tel" /> 
+        </div> 
+        <div class="input-group"> 
+          <label>Company</label> <input name="company" id="company" class="en-input company" type="text" /> 
+        </div> 
+        <div class="input-group"> 
+          <label>Designation</label> <input name="designation" id="designation" class="en-input designation" type="text" /> 
+        </div> 
+        <div class="form-group"> 
+          <label>Description</label> <textarea name="description" id="description" class="form-control" type="textarea"></textarea> 
+        </div> 
+        <div class="input-group"> <input name="submit" id="form_submit" class="en-input-button" type="submit" value="Submit" /> 
+        </div> </form> 
+    </div> 
+  </div>						<!-- Modal -->
+  <div id="myModal" role="dialog" class="modal fade"> 
+    <div class="modal-dialog">	<!-- Modal content-->
+	
+      <div class="modal-content"> 
+        <div class="modal-body"> <button data-dismiss="modal" class="close" type="button">×</button> <strong>Thank you for submitting your Interest. We will contact you soon!</strong> 
+        </div> 
+      </div> 
+    </div> 
+  </div> <header class="nura-header menu-header navbar-fixed-top"> 
+    <div class="container-fluid"> <nav class="navbar navbar-default"> 
+        <div class="navbar-header"> 
+          <!-- hamburger button -->
+          <button data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle" type="button"> <span class="sr-only">Toggle navigation</span>    </button>          <!-- / hamburger button --> 
+          
+          <!-- Logo --> 
+          <a class="navbar-brand" href="index.html"> <img alt="Scomode" class="main-logo-light" src="images/logo.png" /> </a> 
+          <!-- /Logo --> 
+        
+        </div> 
+        <div class="collapse navbar-collapse"> 
+          <!-- Main navigation -->
+          
+          <ul class="nav navbar-nav navbar-right"> 
+            <li> <a href="about-us.html">About us</a> </li> 
+            <li> <a href="industries.html" class="has-sub-menu">Industries</a>
+	            <ul class="sub-menu industlink">
+					<li> <a href="industries.html#ind-telecomes">Telecom</a> </li>
+					<li> <a href="industries.html#ind-powers" >Power</a> </li>
+					<li> <a href="industries.html#ind-minings">Mining</a> </li>
+	                 <!--<li> <a href="#ind-manu" data-toggle="tab"data-image="manufacture-banner">Manufacturing</a> </li> -->
+					<li> <a href="industries.html#ind-smartcitis">Smart Cities</a> </li>
+	     			<li> <a href="industries.html#ind-retails">Retail</a> </li>
+	     			<li> <a href="industries.html#ind-oilgass">Oil & Gas</a> </li>
+             <li> <a href="industries.html#ind-agriiot">Agri IOT</a> </li>
+				</ul>
+            </li>
+            <li class="active"> <a class="has-sub-menu" href="technology.html">technology</a> 
+              <ul class="sub-menu tech-link"> 
+                <li> <a data-toggle="tab" data-image="scomode-banner" href="#scomode">SCOMODE</a> </li> 
+            
+              </ul> </li> 
+            <li> <a class="has-sub-menu" href="javascript:void(0);">products</a> 
+              <ul class="sub-menu products-link"> 
+               
+                <li> <a href="remote-tower-management-system.html">RTMS</a> </li> 
+                <li> <a href="transformer-monitoring-solution.html">TMS</a> </li> 
+               
+                <li> <a href="products_building_management.html">BMS</a> </li> 
+                <li> <a href="products_RobotiX_TactiX.html">RobotiX and TactiX</a> </li>
+              </ul> </li> 
+            <li> <a href="contact.html">Contact us</a> </li>            
+            <!--
+            <li class="request-menu"><a href="javascript:;">Request Demo</a></li> -->
+            
+          
+          </ul>          <!-- / End main navigation --> 
+        
+        </div> </nav> 
+    </div> </header>  <!-- header --> 
+  
+  <!-- content -->
+  <main id="content" class="content-section"> <section id="slider" class="industry-banner"> 
+      <div data-neko_items="1" data-neko_singleitem="true" data-neko_navigation="true" data-neko_paginationnumbers="false" data-neko_autoplay="true" data-neko_touchdrag="false" data-neko_mousedrag="false" class="owl-carousel neko-data-owl neko-owl-theme-1">          <!-- owl carousel item 1 -->
+          
+        <div class="item item-img4"> 
+          <div class="col-md-12 banner-title"> <h1 class="bannerTitle">SCOMODE</h1> 
+          </div> 
+        </div>          <!-- / owl carousel item 1 -->
+          <!-- owl carousel item 2 -->
+          
+        <div class="item item-img5"> 
+          <div class="col-md-12 banner-title"> <h1 class="bannerTitle">SCOMODE</h1> 
+          </div> 
+        </div>          <!-- / owl carousel item 2 -->
+          <!-- owl carousel item 3 -->
+          
+        <div class="item item-img6"> 
+          <div class="col-md-12 banner-title"> <h1 class="bannerTitle">SCOMODE</h1> 
+          </div> 
+        </div>          <!-- / owl carousel item 3 -->
+        
+      </div> 
+      <div class="container-fluid inner-slider-tab"> 
+        <div class="row"> 
+          <div class="tab-list "> 
+            <ul class="nav nav-tabs tech-tab"> 
+              <li class="active"> <a data-toggle="tab" data-image="scomode-banner" data-vid-target="scomode_vid" href="#scomode">SCOMODE</a> </li> 
+          
+            </ul> 
+          </div> 
+        </div> 
+      </div> </section> 
+    <div class="tab-content  nura-tabs tech-tabs"> <section id="scomode" class="section-fw tab-pane active technology-section"> 
+        <div class="container"> <h1 class="tech-quote">Connecting <span>“Man, Machine and Methods”</span></h1> 
+          <p class="first-para">               A fully configurable middleware IOIT Operating system delivered as a  platform, enabling a variety of IOT devices to get connected with standard or customized protocols, codecs and standards with utmost data handling efficiency and accuracy. 
+            </p> <figure data-nekoanim="fadeInUp" data-nekodelay="100" class="animated second animated-invisible fadeInLeft animated-visible video-item"> <video width="100%" id="scomode_vid"> <source type="video/mp4" src="https://Scomodelabs.com/videos/scomode.mp4"></source>                           Your browser does not support HTML5 video.
+                         
+						</video>  </figure> <img alt="" class="img-responsive mobile-tech-img" src="images/mobile-technology/scomode.jpg" /> 
+          <p class="second-para">            SCOMODE is a set of hardware protocols and interfaces which is easily configurable over the cloud to interconnect different type of connected devices. SCOMODE platform is completely modularized covering maximum protocols and interfaces. SCOMODE Enables interconnecting any non standard devices\systems to standard devices and protocols
+            </p> 
+          <p class="middle-para">              SCOMODE is a implementation of interconnection of uniquely identifiable objects over the internet with existing infrastructure. The Object can be a Man, Machine or a Method which could be linked to the Internet via standardized or customized protocols and systems. SCOMODE has a integrated Machine learning and Decision making algorithms which could be configured as per the user requirement. It also has a Data analytics like Stochastic , pattern recognition and Big data which can be processed with distributed infrastructure. 
+              </p> 
+        </div> 
+        <div class="container technology-feature-icon"> 
+          <div class="row"> 
+            <div class="col-md-6"> 
+              <div class="tech-icon1"> <img alt="" src="images/tech-icons/icon-1.png" /> 
+              </div> 
+              <p>                  Supports multiple CPU platforms like INTEL X86,<br />X64, ARM 7 onwards, CORTEX, AMD
+               </p> 
+            </div> 
+            <div class="col-md-6"> 
+              <div class="tech-icon1"> <img alt="" src="images/tech-icons/icon-2.png" /> 
+              </div> 
+              <p>                  Can support multiple operating systems like LINUX,<br />SOLARIS, WINDOWS, WINDOWS CE, UNIX BASED RTOS
+               </p> 
+            </div> 
+          </div> 
+          <div class="row"> 
+            <div class="col-md-6"> 
+              <div class="tech-icon1"> <img alt="" src="images/tech-icons/icon-3.png" /> 
+              </div> 
+              <p>                Can support various interfaces like UART,<br />WIFI, BLUETOOTH,<br />IR, SATA, I2C, SPI, USB, HDMI, AUDIO, FIBER etc. 
+               </p> 
+            </div> 
+            <div class="col-md-6"> 
+              <div class="tech-icon1"> <img alt="" src="images/tech-icons/icon-4.png" /> 
+              </div> 
+              <p>                 Supports various standard protocols like<br />MODBUS, CANBUS, DLMS, RS485, IEC, DNP 3, PLCC etc<br />with custom protocol wrappers 
+               </p> 
+            </div> 
+          </div> 
+          <div class="row text-center"> 
+            <div class="col-md-12"> 
+              <div class="tech-icon1"> <img alt="" src="images/tech-icons/icon-5.png" /> 
+              </div> 
+              <p>                Supports XML, JSON, CSV, FLAT FILE, MS SQL, MYSQL, MONGO, <br />POSTRE SQL etc for data handling and  logging data 
+               </p> 
+            </div> 
+          </div> 
+        </div> </section> <section id="dna-frameworks" class="section-fw tab-pane technology-section"> 
+        <div class="container"> <h1 class="tech-quote">Software Defined Things</h1> <figure data-nekoanim="fadeInUp" data-nekodelay="100" class=" animated second animated-invisible fadeInLeft animated-visible video-item"> <video width="100%" id="dnaframework_vid"> <source type="video/mp4" src="videos/dna.mp4"></source>                           Your browser does not support HTML5 video.
+                         
+						</video>  </figure> <img alt="" class="img-responsive mobile-tech-img" src="images/mobile-technology/dna.jpg" /> 
+          <p class="dna-para">              DNA Framework is a IOIT software cloner which provides quick, simple to manage and cost effective solution in building complex IOT and enterprise applications with an integrated approach encompassing application development processes, associated standards, and the required technical expertise 
+          </p> 
+        </div> 
+        <div class="container dna-quote"> 
+          <div class="row"> <h1 class="tech-quote inner-quote">DNA framework helps create <span> “Software of Things”</span></h1> 
+          </div> 
+          <div class="row"> 
+            <div class="col-md-12"> <h3 class="capabilites-title">Capabilities</h3> 
+            </div> 
+            <div class="col-md-6"> 
+              <ul class="tech-lists dna-list"> 
+                <li> 
+                  <div class="techlist-content"> 
+                    <div class="tech-left-sec">&nbsp;
+                    </div> 
+                    <div class="tech-right-sec">Data definition tools capability
+                    </div> 
+                  </div> </li> 
+                <li> 
+                  <div class="techlist-content"> 
+                    <div class="tech-left-sec">&nbsp;
+                    </div> 
+                    <div class="tech-right-sec">Capacity to do Data virtualization and non-SQL database support.
+                    </div> 
+                  </div> </li> 
+                <li> 
+                  <div class="techlist-content"> 
+                    <div class="tech-left-sec">&nbsp;
+                    </div> 
+                    <div class="tech-right-sec">Capable of Data processing and Analytics services
+                    </div> 
+                  </div> </li> 
+                <li> 
+                  <div class="techlist-content"> 
+                    <div class="tech-left-sec">&nbsp;
+                    </div> 
+                    <div class="tech-right-sec">Capable of defining role based data access control
+                    </div> 
+                  </div> </li> 
+                <li> 
+                  <div class="techlist-content"> 
+                    <div class="tech-left-sec">&nbsp;
+                    </div> 
+                    <div class="tech-right-sec">Capacity to handle Data scalability
+                    </div> 
+                  </div> </li> 
+                <li> 
+                  <div class="techlist-content"> 
+                    <div class="tech-left-sec">&nbsp;
+                    </div> 
+                    <div class="tech-right-sec">Network Agnostic
+                    </div> 
+                  </div> </li> 
+              </ul> 
+            </div> 
+            <div class="col-md-6"> 
+              <ul class="tech-lists"> 
+                <li> 
+                  <div class="techlist-content"> 
+                    <div class="tech-left-sec">&nbsp;
+                    </div> 
+                    <div class="tech-right-sec">Data type agnostic
+                    </div> 
+                  </div> </li> 
+                <li> 
+                  <div class="techlist-content"> 
+                    <div class="tech-left-sec">&nbsp;
+                    </div> 
+                    <div class="tech-right-sec">Capable of built in sensor feedback looping 
+                    </div> 
+                  </div> </li> 
+                <li> 
+                  <div class="techlist-content"> 
+                    <div class="tech-left-sec">&nbsp;
+                    </div> 
+                    <div class="tech-right-sec">Has rule engines that are configurable for complex workflows 
+                    </div> 
+                  </div> </li> 
+                <li> 
+                  <div class="techlist-content"> 
+                    <div class="tech-left-sec">&nbsp;
+                    </div> 
+                    <div class="tech-right-sec">Cloud based remote device management 
+                    </div> 
+                  </div> </li> 
+                <li> 
+                  <div class="techlist-content"> 
+                    <div class="tech-left-sec">&nbsp;
+                    </div> 
+                    <div class="tech-right-sec">Capable of Open API to external systems
+                    </div> 
+                  </div> </li> 
+                <li> 
+                  <div class="techlist-content"> 
+                    <div class="tech-left-sec">&nbsp;
+                    </div> 
+                    <div class="tech-right-sec">Completely SOA with SAAS based implementation
+                    </div> 
+                  </div> </li> 
+              </ul> 
+            </div> 
+          </div> 
+          <div class="row"> 
+            <div class="col-md-12"> <h3 class="capabilites-title">Features</h3> 
+            </div> 
+            <div class="col-md-6"> 
+              <ul class="tech-lists dna-list"> 
+                <li> 
+                  <div class="techlist-content"> 
+                    <div class="tech-left-sec">&nbsp;
+                    </div> 
+                    <div class="tech-right-sec">Code Less IOT Application Generation
+                    </div> 
+                  </div> </li> 
+                <li> 
+                  <div class="techlist-content"> 
+                    <div class="tech-left-sec">&nbsp;
+                    </div> 
+                    <div class="tech-right-sec">IOT Application Test Automation
+                    </div> 
+                  </div> </li> 
+                <li> 
+                  <div class="techlist-content"> 
+                    <div class="tech-left-sec">&nbsp;
+                    </div> 
+                    <div class="tech-right-sec">QA/QC for Sensors, Data Rate and Data Type
+                    </div> 
+                  </div> </li> 
+                <li> 
+                  <div class="techlist-content"> 
+                    <div class="tech-left-sec">&nbsp;
+                    </div> 
+                    <div class="tech-right-sec">Technology Independent Design/Development
+                    </div> 
+                  </div> </li> 
+                <li> 
+                  <div class="techlist-content"> 
+                    <div class="tech-left-sec">&nbsp;
+                    </div> 
+                    <div class="tech-right-sec">Empower the End users to develop enterprise level IOT
+                    </div> 
+                  </div> </li> 
+                <li> 
+                  <div class="techlist-content"> 
+                    <div class="tech-left-sec">&nbsp;
+                    </div> 
+                    <div class="tech-right-sec">Support parallel and distributed programming  Provide in-built security
+                    </div> 
+                  </div> </li> 
+                <li> 
+                  <div class="techlist-content"> 
+                    <div class="tech-left-sec">&nbsp;
+                    </div> 
+                    <div class="tech-right-sec">Automate change management
+                    </div> 
+                  </div> </li> 
+              </ul> 
+            </div> 
+            <div class="col-md-6"> 
+              <ul class="tech-lists"> 
+                <li> 
+                  <div class="techlist-content"> 
+                    <div class="tech-left-sec">&nbsp;
+                    </div> 
+                    <div class="tech-right-sec">Standardize the development and support process using single interface
+                    </div> 
+                  </div> </li> 
+                <li> 
+                  <div class="techlist-content"> 
+                    <div class="tech-left-sec">&nbsp;
+                    </div> 
+                    <div class="tech-right-sec">Standardize the common features of enterprise application building like logging, deployment, packaging, communication between application environment[RPC, HTTP, EMAIL, NODE, SERVICES] 
+                    </div> 
+                  </div> </li> 
+                <li> 
+                  <div class="techlist-content"> 
+                    <div class="tech-left-sec">&nbsp;
+                    </div> 
+                    <div class="tech-right-sec">Maintain the requirement and delivery models together for easy maintainability 
+                    </div> 
+                  </div> </li> 
+                <li> 
+                  <div class="techlist-content"> 
+                    <div class="tech-left-sec">&nbsp;
+                    </div> 
+                    <div class="tech-right-sec">Integrated Testing, Debugging and Deployment features 
+                    </div> 
+                  </div> </li> 
+                <li> 
+                  <div class="techlist-content"> 
+                    <div class="tech-left-sec">&nbsp;
+                    </div> 
+                    <div class="tech-right-sec">Can generate application technologies like Web application, Mobile application, Hybrid application, Native applications, web services
+                    </div> 
+                  </div> </li> 
+                <li> 
+                  <div class="techlist-content"> 
+                    <div class="tech-left-sec">&nbsp;
+                    </div> 
+                    <div class="tech-right-sec">Enables Design once and replicate when ever necessary in multiple platforms
+                    </div> 
+                  </div> </li> 
+              </ul> 
+            </div> 
+          </div> 
+        </div> 
+        <div class="container  dna-last-section"> <img alt="" class="img-responsive" src="images/tech-icons/dna-inner-img.png" /> 
+        </div> </section> <section id="nivids" class="section-fw tab-pane technology-section"> 
+        <div class="container"> 
+          <div class="row"> 
+            <div class="col-md-12"> <h2 class="tech-title text-center">Scomode's Intelligent Variable Information Distillation System</h2> <figure data-nekoanim="fadeInUp" data-nekodelay="100" class=" animated second animated-invisible fadeInLeft animated-visible video-item"> <video width="100%" id="nivids_vid"> <source type="video/mp4" src="videos/segment.mp4"></source>                           Your browser does not support HTML5 video.
+                         
+						</video>  </figure> <img alt="" class="img-responsive mobile-tech-img" src="images/mobile-technology/nivids.jpg" /> 
+              <p class="nivid-para">             Scomode IMS is a cross over layer that provides decisive intelligence to the IOIT systems using complex algorithms and business intelligence. Smart inbuilt Ai, SP and BI algorithms enables you to easily build a well-defined relational data map of business-critical data. A self-configurable data analytics engine to build business specific dashboards and analytical reports. Helps you realize the potential of your data and achieve operational optimization.
+          </p> 
+              <p class="nivid-second-para">             Industry specific data cube is build in order the connect the pieces of IOIT together i.e Data that is collected from Man, Machine and Methods are translated by Software of Things and interpreted and interrelated using Information management System to build the perfect three dimensional data correlation.
+          </p> 
+            </div> 
+          </div> 
+        </div> </section> 
+    </div> </main>  <!-- / content --> 
+  
+  <!-- footer -->
+  <!--<footer id="main-footer" class="dark-color"> -->
+  <!--  <div class="container"> -->
+  <!--    <div class="row"> -->
+  <!--      <div class="col-md-6"> -->
+  <!--        <div class="row"> -->
+  <!--          <div class="col-md-4 col-sm-4"> -->
+  <!--            <div class="footer-widget"> <h3>Technology</h3> -->
+  <!--              <ul class="list-unstyled footerMenu"> -->
+  <!--                <li class="no-pt"><a data-toggle="tab" data-image="scomode-banner" href="#scomodes">SCOMODE</a></li> -->
+                 
+  <!--              </ul> -->
+  <!--            </div> -->
+  <!--          </div> -->
+  <!--          <div class="col-md-4 col-sm-4"> -->
+  <!--            <li> <a href="industries.html" class="has-sub-menu">Industries</a>-->
+	 <!--           <ul class="sub-menu industlink">-->
+		<!--			<li> <a href="industries.html#ind-telecomes">Telecom</a> </li>-->
+		<!--			<li> <a href="industries.html#ind-powers" >Power</a> </li>-->
+		<!--			<li> <a href="industries.html#ind-minings">Mining</a> </li>-->
+	                 <!--<li> <a href="#ind-manu" data-toggle="tab"data-image="manufacture-banner">Manufacturing</a> </li> -->
+		<!--			<li> <a href="industries.html#ind-smartcitis">Smart Cities</a> </li>-->
+	 <!--    			<li> <a href="industries.html#ind-retails">Retail</a> </li>-->
+	 <!--    			<li> <a href="industries.html#ind-oilgass">Oil & Gas</a> </li>-->
+  <!--           <li> <a href="industries.html#ind-agriiot">Agri IOT</a> </li>-->
+
+		<!--		</ul>-->
+  <!--          </li>-->
+  <!--          </div> -->
+  <!--          <div class="col-md-4 col-sm-4"> -->
+  <!--            <div class="footer-widget"> <h3>Products</h3> -->
+  <!--              <div class="no-padding"> -->
+  <!--                <ul class="list-unstyled pull-left"> -->
+                   
+  <!--                  <li class="no-pt"><a href="remote-tower-management-system.html">RTMS</a></li> -->
+  <!--                  <li class="no-pt"><a href="transformer-monitoring-solution.html">TMS</a></li> -->
+                   
+  <!--                  <li><a href="products_building_management.html">BMS</a></li> -->
+  <!--                  <li><a href="products_RobotiX_TactiX.html">RobotiX and TactiX</a></li> -->
+                   
+  <!--                </ul> -->
+  <!--              </div> -->
+  <!--            </div> -->
+  <!--          </div> -->
+  <!--        </div> -->
+  <!--      </div> -->
+  <!--      <div class="col-md-6">-->
+  <!--        <div class="row">-->
+  <!--                <div class="col-md-6 col-sm-6">-->
+  <!--                <div class="footer-widget cont">-->
+  <!--                  <h3 id="contact-us">Contact Us</h3>-->
+  <!--                  <h5><strong>Singapore</strong></h5>-->
+  <!--              <p >10, Kallang Avenue, #05-17 Aperia Tower 2,<br />-->
+  <!--                Singapore - 339510.-->
+  <!--              </p>-->
+		<!--	        	<ul class="list-unstyled">-->
+  <!--              <li><strong>T</strong>: +65 6776 7819 </li>-->
+  <!--              <li><strong>F</strong>: +65 6776 7817</li>-->
+  <!--              <li><strong>E</strong>: <a href="mailto:info@scomode.com">info@scomode.com</a></li>-->
+  <!--              </ul>-->
+                         
+  <!--                  </div>-->
+  <!--                  <div class="footer-widget cont">-->
+                      <!-- <p class="emal">Email</p>-->
+                      <!-- <p><a href="mailto:ncspl@Scomodelabs.com">ncspl@Scomodelabs.com</a></p>-->
+                
+  <!--                  </div>-->
+  <!--                </div>-->
+  <!--          <div class="col-md-6 col-sm-6">-->
+            
+  <!--            <div class="footer-widget cont last">-->
+  <!--              <h5><strong>India</strong></h5>-->
+                
+  <!--              <p >1st Floor, Lakshmi Enclave II, <br />-->
+  <!--                Sarojini Street, Rajaji Nagar,<br />-->
+  <!--                Pallavaram, Chennai. TN - 600 041.-->
+  <!--            </p>         -->
+  <!--            <br>-->
+  <!--              <p >‘Vijaya’, #46, <br />-->
+  <!--                 ATT Colony, Coimbatore. TN – 641 018.-->
+  <!--              </p>-->
+  <!--                <ul class="list-unstyled">-->
+  <!--                    <li><strong>T</strong>: +91 86104 43057</li>-->
+  <!--                    <li><strong>E</strong>: <a href="mailto:info@scomode.com">info@scomode.com</a></li>-->
+  <!--                </ul>-->
+  <!--            </div>-->
+        
+  <!--          </div>-->
+  <!--        </div>-->
+          
+  <!--    </div>-->
+  <!--    </div> -->
+  <!--  </div> -->
+  <!--  <div class="clearfix"></div>        <!---->
+  <!--  <div class="container"> -->
+  <!--    <div class="row resp"> -->
+  <!--      <div class="col-sm-6  "> -->
+  <!--        <div class="footer-widget clearfix"> <h3>Request for a DEMO</h3> <input placeholder="Email" class="form-input" type="text" /> <button class="submit-btn" type="submit">Submit</button> -->
+  <!--        </div> -->
+  <!--      </div> -->
+  <!--      <div class="col-sm-6 col-xs-12 "> -->
+  <!--        <div> -->
+  <!--          <ul class="social-icons main-color circle social-hover"> -->
+  <!--            <li> <a title="facebook" class="facebook" href="javascript:;">&nbsp;</a> </li> -->
+  <!--            <li> <a title="linkedin" class="linkedin" href="javascript:;">&nbsp;</a> </li> -->
+  <!--            <li> <a title="twitter" class="twitter" href="javascript:;">&nbsp;</a> </li> -->
+  <!--          </ul> -->
+  <!--        </div> -->
+  <!--      </div> -->
+  <!--    </div> -->
+  <!--  </div> -->-->
+      
+      
+     
+         
+        
+      
+    
+    
+  <!--  <div class="container-fluid no-padding"> -->
+  <!--    <div class="copy-rights"> -->
+  <!--      <div class="container"> -->
+  <!--        <div class="row"> -->
+  <!--          <div class="col-md-6 col-sm-12"> -->
+  <!--            <p class="company-copyrights-text">©2022,  Scomode Technologies</p> -->
+  <!--          </div> -->
+           
+  <!--          <div class="col-md-6  col-sm-12">&nbsp;-->
+  <!--          </div> -->
+  <!--        </div> -->
+  <!--      </div> -->
+  <!--    </div> -->
+  <!--  </div> </footer>  -->
+  <!-- footer -->
+  <footer id="main-footer" class="dark-color">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+           <div class="row">
+            <div class="col-md-4 col-sm-4">
+                 <div class="footer-widget">
+            <h3>Technology</h3>
+            <ul class="list-unstyled">
+           
+              <li class="no-pt"><a href="technology.html#scomodes">SCOMODE</a></li>
+             
+            </ul>
+          </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                 	<div class="footer-widget">
+            <h3>Industries</h3>
+          <div class="no-padding">
+              <ul class="list-unstyled pull-left">
+              <li class="no-pt"><a href="industries.html#ind-telecomes">Telecom</a></li>
+              <li class="no-pt"><a href="industries.html#ind-powers" >Power</a></li>
+                <li class="no-pt"><a href="industries.html#ind-minings">Mining</a></li>
+               <li class="no-pt"><a href="industries.html#ind-smartcitis">Smart Cities</a></li>
+                <li><a href="industries.html#ind-retails">Retail</a></li>
+                <li><a href="industries.html#ind-oilgass">Oil & Gas</a></li>
+                <li><a href="industries.html">Agri IOT</a></li>
+                
+              </ul>
+             
+            </div>
+          
+          </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                	<div class="footer-widget">
+            <h3>Products</h3>
+          <div class="no-padding">
+              <ul class="list-unstyled pull-left">
+          
+              <li class="no-pt"><a href="remote-tower-management-system.html" >RTMS</a></li>
+                <li class="no-pt"><a href="transformer-monitoring-solution.html">TMS</a></li>
+  
+                <li><a href="products_building_management.html">BMS</a></li>
+     
+             
+              </ul>
+              
+            </div>
+          
+          </div>
+            </div>
+           </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                  <div class="footer-widget cont">
+                    <h3 id="contact-us">Contact Us</h3>
+                    <h5><strong>Singapore</strong></h5>
+                <p >10, Kallang Avenue, #05-17 Aperia Tower 2,<br />
+                  Singapore - 339510.
+                </p>
+			        	<ul class="list-unstyled">
+                <li><strong>T</strong>: +65 6776 7819 </li>
+                <li><strong>F</strong>: +65 6776 7817</li>
+                <li><strong>E</strong>: <a href="mailto:info@scomode.com">info@scomode.com</a></li>
+                </ul>
+                         
+                    </div>
+                    <div class="footer-widget cont">
+                      <!-- <p class="emal">Email</p>-->
+                      <!-- <p><a href="mailto:ncspl@Scomodelabs.com">ncspl@Scomodelabs.com</a></p>-->
+                
+                    </div>
+                  </div>
+            <div class="col-md-6 col-sm-6">
+            
+              <div class="footer-widget cont last">
+                <h5><strong>India</strong></h5>
+                
+                <p >1st Floor, Lakshmi Enclave II, <br />
+                  Sarojini Street, Rajaji Nagar,<br />
+                  Pallavaram, Chennai. TN - 600 041.
+              </p>         
+              <br>
+                <p >#46, <br />
+                   ATT Colony, Coimbatore. TN – 641 018.
+                </p>
+                  <ul class="list-unstyled">
+                      <li><strong>T</strong>: +91 86104 43057</li>
+                      <li><strong>E</strong>: <a href="mailto:info@scomode.com">info@scomode.com</a></li>
+                  </ul>
+              </div>
+        
+            </div>
+          </div>
+          
+      </div>
+          </div>
+            
+        </div>
+        </div>
+      
+        </div>
+        <div class="clearfix"></div>
+        <!--<div class="container">
+        <div class="row resp">
+         <div class="col-sm-6  ">
+           
+             <div class="footer-widget clearfix">
+            <h3>Request for a DEMO</h3>
+            <input type="text" class="form-input" placeholder="Email">
+            <button type="submit" class="submit-btn">Submit</button>
+          </div>
+          </div>
+          <div class="col-sm-6 col-xs-12 ">
+            <div class="">
+              <ul class="social-icons main-color circle social-hover">
+                <li> <a href="javascript:;" class="facebook" title="facebook"><i class="icon-glyph-320"></i></a> </li>
+                <li> <a href="javascript:;" class="linkedin" title="linkedin"><i class="icon-glyph-308"></i></a> </li>
+                <li> <a href="javascript:;" class="twitter" title="twitter"><i class="icon-glyph-339"></i></a> </li>
+              </ul>
+            </div>
+          </div>
+          </div>
+          </div> -->
+      
+      
+     
+         
+        
+      
+    
+    <div class="container-fluid no-padding">
+      <div class="copy-rights">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <p class="company-copyrights-text">©2022,  Scomode Technologies</p>
+            </div>
+           
+            <div class="col-md-6  col-sm-12"> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- / footer --> 
+</div><!-- global wrapper --> 
+
+<!-- End Document ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script type="text/javascript" src="neko-framework/js/jquery/jquery-2.1.4.min.js">
+</script> 
+<script type="text/javascript" src="neko-framework/js/jquery-ui/jquery-ui-1.8.23.custom.min.js">
+</script> 
+
+<!-- external framework plugins --> 
+<script type="application/javascript" src="neko-framework/external-plugins/external-plugins.min.js">
+</script> 
+<!-- neko framework script --> 
+<script type="text/javascript" src="neko-framework/js/neko-framework.js">
+</script> 
+
+<!-- external custom plugins --> 
+
+<!-- Revolution slider --> 
+<script type="text/javascript" src="js-plugins/rs-plugin/js/jquery.themepunch.tools.min.js">
+</script> 
+<script type="text/javascript" src="js-plugins/rs-plugin/js/jquery.themepunch.revolution.min.js">
+</script> 
+<script src="build/js/intlTelInput.js">
+</script> 
+<script src="js/custom.js">
+</script> 
+<script type="text/javascript" src="js/common-script.js">
+</script><!-- 
+<script src="js/video.js">
+</script> -->
+<script>$(document).ready(function(){
+  $( '.nura-technology' ).on( 'click', '.tabs-icons .nav li a', function() {
+    stopAll();
+    var vidID = $( this ).attr( 'data-vid-target' );
+    var vid = $( '#'+vidID )[0];
+    var videoBtn = $( '#'+vidID ).parents('figure').find('.videoButton');
+    if(videoBtn.hasClass('play')){
+      vid.pause();
+    }else
+    {
+      vid.play();  
+    }
+    
+  });
+
+  function stopAll() {
+    $( '.nura-technology .tabs-icons .nav li' ).each( function(){
+      var vidID = $( this ).find('a').attr( 'data-vid-target' );
+      var vid = $( '#'+vidID )[0];
+      vid.pause();
+      var videoBtn = $( '#'+vidID ).parents('figure').find('.videoButton');
+      if(!videoBtn.hasClass('play')){
+        vid.currentTime = 0; 
+      }
+      
+    });
+  }
+
+   /* UTITLITY */
+  function Utils() {
+
+  }
+
+  Utils.prototype = {
+     constructor: Utils,
+     isElementInView: function (element, fullyInView) {
+         var pageTop = $(window).scrollTop();
+         var pageBottom = pageTop + $(window).height();
+         var elementTop = $(element).offset().top;
+         var elementBottom = elementTop + $(element).height();
+
+         if (fullyInView === true) {
+             return ((pageTop < elementTop) && (pageBottom > elementBottom));
+         } else {
+             return ((elementTop <= pageBottom) && (elementBottom >= pageTop));
+         }
+     }
+  };
+
+  var Utils = new Utils();
+
+  $( window ).scroll( function() {
+    
+	  // TECHNOLOGY PAGE
+	  var vidID = $( 'section .tab-list .nav li.active a' ).attr( 'data-vid-target' );
+	  console.log(vidID);
+    var isElementInView = Utils.isElementInView($('#'+vidID), false);
+    var vid = $( '#'+vidID )[0];
+
+      if (isElementInView) {
+        var videoBtn = $( '#'+vidID ).parents('figure').find('.videoButton');
+        if(videoBtn.hasClass('play') || videoBtn.hasClass('replay')){
+          vid.pause();
+        }
+        else{
+          vid.play(); 
+        }
+      }
+      else {
+        vid.pause();
+        // vid.currentTime = 0;
+      }
+  });
+
+
+
+    //video play pause code
+   $("#scomode_vid,#dnaframework_vid,#nivids_vid").on(
+    "timeupdate", 
+    function(event){
+      if($(this).is('#scomode_vid')){
+        onTrackedVideoFrame(this.currentTime, this.duration, 'scomode_vid');  
+      }
+      else if($(this).is('#dnaframework_vid')){
+        onTrackedVideoFrame(this.currentTime, this.duration, 'dnaframework_vid');  
+      }
+      else if($(this).is('#nivids_vid')){
+        onTrackedVideoFrame(this.currentTime, this.duration, 'nivids_vid');  
+      }
+    });
+
+
+  $(document).on('click','.videoButton',function(){
+    var myVideo;
+    var curId;
+    if($('.tech-tab li:eq(0)').hasClass('active')){
+      myVideo = document.getElementById("scomode_vid");
+      curId = $('#scomode_vid');
+    }
+    else if($('.tech-tab li:eq(1)').hasClass('active')){
+      myVideo = document.getElementById("dnaframework_vid"); 
+      curId = $('#dnaframework_vid');
+    }
+    else if($('.tech-tab li:eq(2)').hasClass('active')){
+      myVideo = document.getElementById("nivids_vid"); 
+      curId = $('#nivids_vid');
+    }
+    curId.parents('figure').find('.videoButton').removeClass('play');     
+    myVideo.play(); 
+  });
+
+  $(document).on('click','#scomode_vid,#dnaframework_vid,#nivids_vid',function(){
+    var myVideo; 
+    var curId;
+     if($('.tech-tab li:eq(0)').hasClass('active')){
+        myVideo = document.getElementById("scomode_vid"); 
+        curId = $('#scomode_vid');
+    }
+    else if($('.tech-tab li:eq(1)').hasClass('active')){
+        myVideo = document.getElementById("dnaframework_vid"); 
+        curId = $('#dnaframework_vid');
+    }
+    else if($('.tech-tab li:eq(2)').hasClass('active')){
+        myVideo = document.getElementById("nivids_vid"); 
+        curId = $('#nivids_vid');
+    } 
+    if (myVideo.paused) {
+      curId.parents('figure').find('.videoButton').removeClass('replay');
+      curId.parents('figure').find('.videoButton').removeClass('pause');
+      curId.parents('figure').find('.videoButton').addClass('play magictime puffOut');
+      myVideo.play(); 
+      setTimeout(function(){
+        curId.parents('figure').find('.videoButton').removeClass('play magictime puffOut');
+      },1000);
+    }   
+    else {
+      curId.parents('figure').find('.videoButton').removeClass('replay');
+      curId.parents('figure').find('.videoButton').removeClass('play');
+      curId.parents('figure').find('.videoButton').addClass('pause magictime puffOut');
+      myVideo.pause(); 
+      setTimeout(function(){
+        curId.parents('figure').find('.videoButton').removeClass('pause magictime puffOut');        
+      },1000);
+      setTimeout(function(){
+        curId.parents('figure').find('.videoButton').addClass('play');
+      },1100);
+    }   
+  });
+});
+
+function onTrackedVideoFrame(currentTime, duration, ids){
+    // $("#current").text(currentTime);
+    // $("#duration").text(duration);
+    if(currentTime==16.684 && ids == 'scomode_vid'){
+      $("#"+ids).parents('figure').find('.videoButton').removeClass('pause play magictime puffOut');
+      $("#"+ids).parents('figure').find('.videoButton').addClass('replay');
+    }
+    else if(currentTime==17.151 && ids == 'dnaframework_vid'){
+      $("#"+ids).parents('figure').find('.videoButton').removeClass('pause play magictime puffOut');
+      $("#"+ids).parents('figure').find('.videoButton').addClass('replay');
+    }
+    else if(currentTime==16.851 && ids == 'nivids_vid'){
+      $("#"+ids).parents('figure').find('.videoButton').removeClass('pause play magictime puffOut');
+      $("#"+ids).parents('figure').find('.videoButton').addClass('replay');
+    }
+    else
+    {
+      $("#"+ids).parents('figure').find('.videoButton').removeClass('replay');
+    }
+}
+</script> 
+<script>$(document).ready(function () 
+		{	
+			$('.selected-flag').on("change",function()
+			{     
+				var title_code=$('.selected-flag').attr('title');		
+				$('#hidid').val(title_code);
+			});
+		});
+</script> 
+<script type="text/javascript">function validate(){  
+		var name = $( '#name' ).val().trim();
+		var email = $( '#email' ).val().trim();
+		var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+		var num = $( '#phone' ).val().trim();
+		var company = $( '#company' ).val().trim();
+		var desg = $( '#designation' ).val().trim();
+		//var name=document.myform.name.value;  
+		var x=document.myform.email.value;  
+		var atposition=x.indexOf("@");  
+		var dotposition=x.lastIndexOf(".");	  
+		//var num=document.myform.phone.value;
+		//var company=document.myform.company.value; 
+		//var desg=document.myform.designation.value; 
+		var status=false;
+		
+	if(!name.match(/^[a-zA-Z\.]+$/)){  
+		document.getElementById("namelocation").innerHTML= " <img src='img/close_red.png'/> Please Enter Your Name";  
+		status=false;
+	}else{  
+		document.getElementById("namelocation").innerHTML=" <img src='img/add.png'/>";  
+		status=true;
+	}  
+	if (reg.test(email) == false) 
+            {
+                document.getElementById("passwordlocation").innerHTML=" <img src='img/close_red.png'/> Please Enter Valid Email Address ";
+                status=false;
+            }
+			else{ 
+			document.getElementById("passwordlocation").innerHTML=" <img src='img/add.png'/>";  
+	 }   
+	<!-- if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){    -->
+		<!-- document.getElementById("passwordlocation").innerHTML=" <img src='img/close_red.png'/> Please Enter Valid Email Address ";   -->
+		<!-- status=false;  -->
+	<!-- }else{   -->
+		<!-- document.getElementById("passwordlocation").innerHTML=" <img src='img/add.png'/>";   -->
+	<!-- }   -->
+	 if(num==""){  
+		document.getElementById("numlocation").innerHTML= " <img src='img/close_red.png'/> Please Enter Your Mobile Number ";  
+		status=false;
+	}else{  
+		document.getElementById("numlocation").innerHTML=" <img src='img/add.png'/>";  
+		
+	}	
+	if(company==""){  
+		document.getElementById("comlocation").innerHTML= " <img src='img/close_red.png'/> Please Enter Your Company Name";  
+		status=false;
+	}else{  
+		document.getElementById("comlocation").innerHTML=" <img src='img/add.png'/>";  
+		
+	}
+	if(desg==""){  
+		document.getElementById("desglocation").innerHTML= " <img src='img/close_red.png'/> Please Enter Your Designation";  
+		status=false;
+	}else{  
+		document.getElementById("desglocation").innerHTML=" <img src='img/add.png'/>";  		
+	}	
+		<!-- var title_code=$('.selected-flag').attr('title'); -->
+		<!-- var CodeSplit=title_code.split(':');			 -->
+		<!-- var CountryCode=CodeSplit[1].trim()+num; -->
+		<!-- $('#hidid').val(countrycode); -->
+						
+		return status; 				
+	}  
+	$('#form_test').on('submit', function(e) {
+	 e.preventDefault();
+	var  rtnValue=validate();
+	if(rtnValue==true)
+	{
+//	action="contact-form-handler.php" id="form_test" onsubmit="return validate()"
+    //Prevents default submit
+    var form = $(this); 
+    var post_url = form.attr('action'); 
+    var post_data = form.serialize(); //Serialized the form data for process.php
+    //$('#loader', form).html('<img src="../img/loader.gif" /> Please Wait...');
+    $.ajax({
+        type: 'POST',
+        url: 'contact-form-handler.php', // Your form script
+        data: post_data,
+        success: function(msg) {
+		if(msg=="0")
+		{
+		$('#myModal').modal('show'); 
+		 $( '#name' ).val("");
+		}
+		else
+		{
+		$('#form_test img').css("display","none");
+		$( '#name' ).val("");
+		$( '#email' ).val("");
+		$( '#phone' ).val("");
+		$( '#company' ).val("");
+		$( '#designation' ).val("");
+		$( '#description' ).val("");		
+		$('#myModal').modal('show'); 
+		$('.enq-form').fadeToggle();
+		 $('.form-div img').click(function(){
+            $('.enq-form').show();
+        });
+		$('.enq-form img').click(function(){
+            $('.enq-form').hide();
+        });
+		}
+            //$(form).fadeOut(500, function(){
+              //  form.html(msg).fadeIn();
+            //});
+        }
+    });
+	}
+});
+
+	
+	$("#phone").intlTelInput({
+      // allowDropdown: false,
+      // autoHideDialCode: false,
+      // autoPlaceholder: "off",
+      // dropdownContainer: "body",
+      // excludeCountries: ["us"],
+      // formatOnDisplay: false,
+      geoIpLookup: function(callback) {
+        $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+         var countryCode = (resp && resp.country) ? resp.country : "";
+         callback(countryCode);
+        });
+      },
+      // hiddenInput: "full_number",
+      // initialCountry: "auto",
+      // nationalMode: false,
+      // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+      // placeholderNumberType: "MOBILE",
+      // preferredCountries: ['cn', 'jp'],
+      // separateDialCode: true,
+      utilsScript: "js/Countrycode/utils.js"
+    });
+</script> 
+<script>$(function(){
+        $('.form-div img').click(function(){
+            $(this).parent().toggleClass('form-active');
+        });
+        $('.enq-form img').click(function(){
+            $(this).parent().parent().removeClass('form-active');
+        });
+    });
+</script> 
+<script>$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
+</script> </body>
+</html>
